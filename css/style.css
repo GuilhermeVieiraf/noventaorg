@@ -13,15 +13,14 @@
 
 body {
     font-family: 'FonteNoventaPrincipal', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #f5f5f5 url('/assets/imagens/noventa_camisa.jpg') center/cover no-repeat;
+    background-color: #fefae0;
 }
 
 /* ==================== CONTAINER ==================== */
 .container {
     width: 90%;
     max-width: 1200px;
+    height: auto;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -30,7 +29,7 @@ body {
 header {
     background: red;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -44,7 +43,6 @@ header .container {
     align-items: center;
     height: 100%;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 /* Logo com efeito de destaque animado */
@@ -72,7 +70,6 @@ header .container {
         0 0 5px rgba(153, 0, 0, 0.7);
 }
 
-/* Animação do efeito no texto */
 @keyframes brilhoMovimento {
     0% {
         background-position: 0% 50%;
@@ -83,104 +80,115 @@ header .container {
     }
 }
 
-/* ==================== MENU (Comentado no HTML, mas já preparado) ==================== */
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #333;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 1rem;
-}
-
-/* ==================== HERO SECTION ==================== */
+/* ==================== HERO COM VÍDEO CENTRALIZADO ==================== */
 #hero {
-    height: 80vh;
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px; /* para compensar o header fixo */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-noventa {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+   /* box-shadow: 0 0 20px rgba(204, 0, 0, 1); /* sombra vermelha suave */
+}
+
+.video-noventa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==================== SOBRE - GALERIA DE IMAGENS ==================== */
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
     text-align: center;
 }
 
-#hero h1 {
-    font-size: 3.8rem;
-    margin-bottom: .5rem;
+#sobre img {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+#sobre img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ==================== BOTÃO PADRÃO ==================== */
-.btn {
-    display: inline-block;
-    padding: .75rem 1.5rem;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-}
+/* ==================== servicos - GALERIA DE IMAGENS ==================== */
 
-/* ==================== SESSÕES (SOBRE, SERVIÇOS, CONTATO) ==================== */
-
-section.container {
-    background-color: rgba(255, 255, 255, 0.6); /* fundo branco translúcido */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 4rem 2rem;
-    margin: 4rem auto;
-}
-
-/* ==================== CARDS DE SERVIÇOS ==================== */
-.cards {
+#servicos {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
+    margin-top: 4rem;
+    text-align: center;
 }
 
-.card {
-    flex: 1;
-    min-width: 200px;
-    background: #fafafa;
-    padding: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#servicos img {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#servicos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== contato - GALERIA DE IMAGENS ==================== */
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#contato img {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contato img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==================== SESSÕES VAZIAS PERSONALIZÁVEIS ==================== */
+
 
 /* ==================== FOOTER ==================== */
 footer {
-    background: #333;
-    color: #fff;
+    color: red;
     text-align: center;
     padding: 1rem 0;
-}
-
-/* ==================== RESPONSIVIDADE ==================== */
-@media (max-width: 768px) {
-    .menu a {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu.open a {
-        display: block;
-        margin: 1rem 0;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
 }
