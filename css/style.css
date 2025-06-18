@@ -13,16 +13,16 @@
 
 body {
     font-family: 'FonteNoventaPrincipal', sans-serif;
-    background-color: #fefae0;
+    background-color: #fdfcf6;
 }
 
 /* ==================== CONTAINER ==================== */
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1400px;
     height: auto;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 /* ==================== HEADER ==================== */
@@ -34,7 +34,7 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    height: 100px;
+    height: 80px;
 }
 
 header .container {
@@ -42,12 +42,13 @@ header .container {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
+    position: relative;
 }
 
 /* Logo com efeito de destaque animado */
 .logo-titulo {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
     text-decoration: none;
     background: linear-gradient(270deg,
@@ -74,7 +75,6 @@ header .container {
     0% {
         background-position: 0% 50%;
     }
-
     100% {
         background-position: 200% 50%;
     }
@@ -83,8 +83,8 @@ header .container {
 /* ==================== HERO COM VÍDEO CENTRALIZADO ==================== */
 #hero {
     width: 100%;
-    height: 70vh;
-    margin-top: 80px; /* para compensar o header fixo */
+    height: 60vh;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,11 +94,11 @@ header .container {
 .video-noventa {
     position: relative;
     width: 100%;
-    max-width: 750px;
-    height: 350px;
+    max-width: 800px;
+    height: 400px;
     margin: 0 auto;
     overflow: hidden;
-   /* box-shadow: 0 0 20px rgba(204, 0, 0, 1); /* sombra vermelha suave */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .video-noventa iframe {
@@ -110,85 +110,174 @@ header .container {
     border: none;
 }
 
-/* ==================== SOBRE - GALERIA DE IMAGENS ==================== */
-
-#sobre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    text-align: center;
+/* ==================== GALERIA UNIFICADA ==================== */
+#galeria {
+    column-count: 3;
+    column-gap: 1rem;
+    margin-top: 6rem;
+    padding: 0.5rem;
 }
 
-#sobre img {
+.foto-bloco {
+    display: inline-block;
     width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+    break-inside: avoid;
 }
 
-#sobre img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* ==================== servicos - GALERIA DE IMAGENS ==================== */
-
-#servicos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    text-align: center;
-}
-
-#servicos img {
+.foto-bloco img {
     width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
-
-#servicos img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* ==================== contato - GALERIA DE IMAGENS ==================== */
-
-#contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    text-align: center;
-}
-
-#contato img {
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contato img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/* ==================== SESSÕES VAZIAS PERSONALIZÁVEIS ==================== */
-
 
 /* ==================== FOOTER ==================== */
 footer {
     color: red;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* ==================== MENU HAMBÚRGUER ==================== */
+.menu-hamburguer {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.menu-hamburguer:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.potinho {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Animação do menu quando ativo */
+.menu-hamburguer.ativo .potinho:nth-child(1) {
+    transform: translateX(-8px) scale(0.8);
+    opacity: 0.7;
+}
+
+.menu-hamburguer.ativo .potinho:nth-child(2) {
+    transform: scale(1.2);
+}
+
+.menu-hamburguer.ativo .potinho:nth-child(3) {
+    transform: translateX(8px) scale(0.8);
+    opacity: 0.7;
+}
+
+/* ==================== PAINEL LATERAL ==================== */
+.painel-lateral {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: linear-gradient(135deg, #cc0000, #990000);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+
+.painel-lateral.aberto {
+    right: 0;
+}
+
+.painel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.painel-header h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.fechar-painel {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.fechar-painel:hover {
+    transform: scale(1.2);
+}
+
+.painel-conteudo {
+    padding: 20px;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral li {
+    margin-bottom: 15px;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 0;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-lateral a:hover {
+    color: #ffcccc;
+    border-bottom: 1px solid #ffcccc;
+    transform: translateX(10px);
+}
+
+/* ==================== OVERLAY ==================== */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
 }

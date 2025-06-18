@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>noventaorg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/fivecon.png">
+    <link rel="apple-touch-icon" href="/assets/fivecon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,32 +15,93 @@
     <header>
         <div class="container">
             <a href="#" class="logo-titulo">NOVENTA</a>
+            <div class="menu-hamburguer" id="menuHamburguer">
+                <div class="potinho"></div>
+                <div class="potinho"></div>
+                <div class="potinho"></div>
+            </div>
         </div>
     </header>
 
+    <!-- Painel lateral -->
+    <div class="painel-lateral" id="painelLateral">
+        <div class="painel-header">
+            <h3>Menu</h3>
+            <button class="fechar-painel" id="fecharPainel">×</button>
+        </div>
+        <div class="painel-conteudo">
+            <nav class="menu-lateral">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Overlay para fechar o painel -->
+    <div class="overlay" id="overlay"></div>
+
     <section id="hero" class="container">
         <div class="video-noventa">
-            <iframe 
-                src="https://www.youtube.com/embed/zalmgqXVDv0?si=Yl823Mcpred0rlXt"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Q39PREkfY?si=PHT8upSpXw8ktn0C"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
-    <section id="sobre" class="container">
-        <img src="/assets/imagens/foto1section1.jpg" alt="foto Silmar">
-        <img src="/assets/imagens/foto2section1.jpg" alt="foto Viana">
-        <img src="/assets/imagens/foto3section1.jpg" alt="foto Simar">
-    </section>
-    <section id="servicos" class="container">
-        <img src="/assets/imagens/foto1section2.jpg" alt="foto Thales">
-        <img src="/assets/imagens/foto2section2.jpg" alt="foto Thales">
-        <img src="/assets/imagens/foto3section2.jpg" alt="foto Thales">
-    </section>
-    <section id="contato" class="container">
-        <img src="/assets/imagens/foto1section3.jpg" alt="foto Gabriel">
-        <img src="/assets/imagens/foto2section3.jpg" alt="foto Grupo">
-        <img src="/assets/imagens/foto3section3.jpg" alt="foto Thales">
+
+    <section id="galeria" class="container">
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto1.jpg" alt="foto Silmar">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto2.jpg" alt="foto Viana">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto3.jpg" alt="foto Simar">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto4.jpg" alt="foto Thales 1">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto5.jpg" alt="foto Thales 2">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto6.jpg" alt="foto Thales 3">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto7.jpg" alt="foto Gabriel">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto8.jpg" alt="foto Grupo">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto9.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto10.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto11.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto12.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto13.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto14.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto15.jpg" alt="foto Thales">
+        </div>
+        <div class="foto-bloco">
+            <img src="/assets/imagens/fotos_galeria/foto16.jpg" alt="foto Thales">
+        </div>
     </section>
 
     <footer class="container">
