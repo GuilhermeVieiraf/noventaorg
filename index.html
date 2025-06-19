@@ -12,38 +12,40 @@
 
 <body>
 
-    <header>
-        <div class="container">
+    <!-- Início do Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container-cabecalho">
             <a href="#" class="logo-titulo">NOVENTA</a>
-            <div class="menu-hamburguer" id="menuHamburguer">
-                <div class="potinho"></div>
-                <div class="potinho"></div>
-                <div class="potinho"></div>
+            <div class="menu-hamburguer" id="menu-hamburguer">
+                <div class="ponto"></div>
+                <div class="ponto"></div>
+                <div class="ponto"></div>
             </div>
         </div>
     </header>
+    <!-- Fim do Cabeçalho -->
 
-    <!-- Painel lateral -->
-    <div class="painel-lateral" id="painelLateral">
-        <div class="painel-header">
+    <!-- Início do Painel Lateral -->
+    <aside class="painel-lateral" id="painel-lateral">
+        <div class="painel-cabecalho">
             <h3>Menu</h3>
-            <button class="fechar-painel" id="fecharPainel">×</button>
+            <button class="botao-fechar-painel" id="botao-fechar-painel">×</button>
         </div>
-        <div class="painel-conteudo">
-            <nav class="menu-lateral">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#galeria">Gallery</a></li>
+                <li><a href="#sobre">About</a></li>
+                <li><a href="contato.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Fim do Painel Lateral -->
 
     <!-- Overlay para fechar o painel -->
     <div class="overlay" id="overlay"></div>
 
+    <!-- Início do Hero (Vídeo) -->
     <section id="hero" class="container">
         <div class="video-noventa">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Q39PREkfY?si=PHT8upSpXw8ktn0C"
@@ -52,61 +54,66 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
+    <!-- Fim do Hero -->
 
+    <!-- Início da Galeria -->
     <section id="galeria" class="container">
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto1.jpg" alt="foto Silmar">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto2.jpg" alt="foto Viana">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto3.jpg" alt="foto Simar">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto4.jpg" alt="foto Thales 1">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto5.jpg" alt="foto Thales 2">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto6.jpg" alt="foto Thales 3">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto7.jpg" alt="foto Gabriel">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto8.jpg" alt="foto Grupo">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto9.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto10.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto11.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto12.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto13.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto14.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto15.jpg" alt="foto Thales">
         </div>
-        <div class="foto-bloco">
+        <div class="bloco-foto">
             <img src="/assets/imagens/fotos_galeria/foto16.jpg" alt="foto Thales">
         </div>
     </section>
+    <!-- Fim da Galeria -->
 
-    <footer class="container">
+    <!-- Início do Rodapé -->
+    <footer class="rodape container">
         <p>&copy; noventa.org</p>
     </footer>
+    <!-- Fim do Rodapé -->
 
     <script src="js/script.js"></script>
 </body>

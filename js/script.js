@@ -1,9 +1,9 @@
 // ==================== MENU HAMBÚRGUER E PAINEL LATERAL ====================
 document.addEventListener('DOMContentLoaded', function() {
-    const menuHamburguer = document.getElementById('menuHamburguer');
-    const painelLateral = document.getElementById('painelLateral');
+    const menuHamburguer = document.getElementById('menu-hamburguer');
+    const painelLateral = document.getElementById('painel-lateral');
     const overlay = document.getElementById('overlay');
-    const fecharPainel = document.getElementById('fecharPainel');
+    const fecharPainel = document.getElementById('botao-fechar-painel');
 
     // Função para abrir o painel
     function abrirPainel() {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para aplicar tamanhos às fotos
     function aplicarTamanhosFotos() {
-        const fotos = document.querySelectorAll('.foto-bloco img');
+        const fotos = document.querySelectorAll('.bloco-foto img');
         const tamanhos = gerarTamanhosDinamicos(fotos.length);
         
         fotos.forEach((foto, index) => {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para reorganizar as fotos (embaralhar ordem)
     function reorganizarFotos() {
         const galeria = document.getElementById('galeria');
-        const fotos = Array.from(document.querySelectorAll('.foto-bloco'));
+        const fotos = Array.from(document.querySelectorAll('.bloco-foto'));
         
         // Remove todas as fotos
         fotos.forEach(foto => foto.remove());
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para misturar e espalhar as fotos
     function misturarFotos() {
         const galeria = document.getElementById('galeria');
-        const fotos = Array.from(document.querySelectorAll('.foto-bloco'));
+        const fotos = Array.from(document.querySelectorAll('.bloco-foto'));
         
         // Remove todas as fotos
         fotos.forEach(foto => foto.remove());
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Função para mudar o layout (pode ser chamada por um botão)
 function alternarLayout() {
     const galeria = document.getElementById('galeria');
-    const fotos = document.querySelectorAll('.foto-bloco img');
+    const fotos = document.querySelectorAll('.bloco-foto img');
     
     // Remove todos os estilos inline
     fotos.forEach(foto => {

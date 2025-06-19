@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | noventaorg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/fivecon.png">
+    <link rel="apple-touch-icon" href="/assets/fivecon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Início do Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container-cabecalho">
+            <a href="index.html" class="logo-titulo">NOVENTA</a>
+            <div class="menu-hamburguer" id="menu-hamburguer">
+                <div class="ponto"></div>
+                <div class="ponto"></div>
+                <div class="ponto"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Fim do Cabeçalho -->
+    <!-- Início do Painel Lateral -->
+    <aside class="painel-lateral" id="painel-lateral">
+        <div class="painel-cabecalho">
+            <h3>Menu</h3>
+            <button class="botao-fechar-painel" id="botao-fechar-painel">×</button>
+        </div>
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#galeria">Gallery</a></li>
+                <li><a href="index.html#sobre">About</a></li>
+                <li><a href="contato.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Fim do Painel Lateral -->
+    <!-- Overlay para fechar o painel -->
+    <div class="overlay" id="overlay"></div>
+    <main class="container" style="margin-top: 100px; min-height: 60vh;">
+        <h1>Contato</h1>
+        <form class="form-contato">
+            <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="assunto">Assunto</label><br>
+                <input type="text" id="assunto" name="assunto" required>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <!-- Início do Rodapé -->
+    <footer class="rodape container">
+        <p>&copy; noventa.org</p>
+    </footer>
+    <!-- Fim do Rodapé -->
+    <script src="js/script.js"></script>
+</body>
+</html>
