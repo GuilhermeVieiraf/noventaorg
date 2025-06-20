@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Contato | noventaorg</title>
+    <title>Gallery - noventaorg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/assets/fivecon.png">
     <link rel="apple-touch-icon" href="/assets/fivecon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <!-- Início do Cabeçalho -->
     <header class="cabecalho">
         <div class="container-cabecalho">
@@ -21,6 +24,7 @@
         </div>
     </header>
     <!-- Fim do Cabeçalho -->
+
     <!-- Início do Painel Lateral -->
     <aside class="painel-lateral" id="painel-lateral">
         <div class="painel-cabecalho">
@@ -36,35 +40,30 @@
         </nav>
     </aside>
     <!-- Fim do Painel Lateral -->
+
     <!-- Overlay para fechar o painel -->
     <div class="overlay" id="overlay"></div>
-    <main class="container" style="margin-top: 100px; min-height: 60vh;">
-        <h1>Contato</h1>
-        <form class="form-contato">
-            <div>
-                <label for="nome">Nome</label><br>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="assunto">Assunto</label><br>
-                <input type="text" id="assunto" name="assunto" required>
-            </div>
-            <div>
-                <label for="mensagem">Mensagem</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </main>
+
+    <!-- Início da Galeria de Eventos -->
+    <section id="galeria-eventos" class="container">
+        <h1>Gallery</h1>
+        
+        <!-- Evento Premiere -->
+        <a href="premiere.html" class="evento">
+            <h2>Premiere</h2>
+            <p class="data-evento">09/01/2025</p>
+            <p class="descricao-evento">evento</p>
+        </a>
+    </section>
+    <!-- Fim da Galeria de Eventos -->
+
     <!-- Início do Rodapé -->
     <footer class="rodape container">
         <p>&copy; noventa.org</p>
     </footer>
     <!-- Fim do Rodapé -->
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

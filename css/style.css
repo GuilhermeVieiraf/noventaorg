@@ -140,6 +140,139 @@ body {
     object-fit: contain;
 }
 
+/* ==================== GALERIA DE EVENTOS ==================== */
+#galeria-eventos {
+    margin-top: 6rem;
+    padding: 2rem 0;
+}
+
+#galeria-eventos h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 3rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.evento {
+    display: block;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--vermelho-noventa);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.evento h2 {
+    font-size: 2.2rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 0.5rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.evento:hover h2 {
+    color: #ff3333;
+}
+
+.data-evento {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.descricao-evento {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.fotos-evento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.fotos-evento .bloco-foto {
+    margin-bottom: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotos-evento .bloco-foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fotos-evento .bloco-foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fotos-evento .bloco-foto:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsividade para a galeria de eventos */
+@media (max-width: 768px) {
+    #galeria-eventos h1 {
+        font-size: 2.5rem;
+    }
+    
+    .evento {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .evento h2 {
+        font-size: 1.8rem;
+    }
+    
+    .fotos-evento {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.8rem;
+    }
+    
+    .fotos-evento .bloco-foto img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #galeria-eventos h1 {
+        font-size: 2rem;
+    }
+    
+    .evento {
+        padding: 1rem;
+    }
+    
+    .evento h2 {
+        font-size: 1.5rem;
+    }
+    
+    .fotos-evento {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==================== RODAPÉ ==================== */
 .rodape {
     color: var(--vermelho-noventa);
