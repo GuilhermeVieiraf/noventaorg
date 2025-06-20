@@ -1,0 +1,55 @@
+/* ==================== CABEÇALHO ==================== */
+.cabecalho {
+    background: var(--vermelho-noventa);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 80px;
+}
+
+.container-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+
+/* Logo com efeito de destaque animado */
+.logo-titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    text-decoration: none;
+    background: linear-gradient(270deg,
+            #ffffff 0%,
+            #ffffff 30%,
+            #ff3333 45%,
+            #990000 50%,
+            #ff3333 55%,
+            #ffffff 70%,
+            #ffffff 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: brilhoMovimento 15s ease-in-out infinite;
+    user-select: none;
+    text-shadow:
+        inset 0 0 8px rgba(255, 255, 255, 0.6),
+        0 0 5px rgba(153, 0, 0, 0.7);
+    font-family: 'FonteNoventaPrincipal', sans-serif;
+}
+
+@keyframes brilhoMovimento {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}

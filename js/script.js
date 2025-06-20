@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para reorganizar as fotos (embaralhar ordem)
     function reorganizarFotos() {
-        const galeria = document.getElementById('galeria');
+        const galeria = document.getElementById('fotos-home');
         const fotos = Array.from(document.querySelectorAll('.bloco-foto'));
         
         // Remove todas as fotos
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para misturar e espalhar as fotos
     function misturarFotos() {
-        const galeria = document.getElementById('galeria');
+        const galeria = document.getElementById('fotos-home');
         const fotos = Array.from(document.querySelectorAll('.bloco-foto'));
         
         // Remove todas as fotos
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==================== FUNÇÕES ADICIONAIS ====================
 // Função para mudar o layout (pode ser chamada por um botão)
 function alternarLayout() {
-    const galeria = document.getElementById('galeria');
+    const galeria = document.getElementById('fotos-home');
     const fotos = document.querySelectorAll('.bloco-foto img');
     
     // Remove todos os estilos inline

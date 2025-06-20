@@ -1,0 +1,27 @@
+/* Estilos exclusivos para a seção de fotos da home (#fotos-home) */
+
+#fotos-home {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 6rem;
+  padding: 0.5rem;
+}
+#fotos-home .bloco-foto {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  background: #f5f5f5;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  align-items: center;
+  justify-content: center;
+}
+#fotos-home .bloco-foto img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 0;
+  object-fit: contain;
+}

@@ -1,0 +1,116 @@
+/* Estilos do menu hambúrguer, painel lateral e overlay */
+.menu-hamburguer {
+    position: absolute;
+    right: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+.menu-hamburguer:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+.ponto {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.menu-hamburguer.ativo .ponto:nth-child(1) {
+    transform: translateX(-8px) scale(0.8);
+    opacity: 0.7;
+}
+.menu-hamburguer.ativo .ponto:nth-child(2) {
+    transform: scale(1.2);
+}
+.menu-hamburguer.ativo .ponto:nth-child(3) {
+    transform: translateX(8px) scale(0.8);
+    opacity: 0.7;
+}
+.painel-lateral {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: var(--vermelho-noventa);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+.painel-lateral.aberto {
+    right: 0;
+}
+.painel-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #fff3;
+}
+.painel-cabecalho h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+.botao-fechar-painel {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.botao-fechar-painel:hover {
+    color: #ffb3b3;
+}
+.painel-conteudo {
+    padding: 20px;
+}
+.menu-lateral ul {
+    list-style: none;
+    padding: 0 2.2rem;
+    margin: 0;
+}
+.menu-lateral li {
+    margin: 1.3rem 0;
+}
+.menu-lateral a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.45rem;
+    transition: color 0.2s, transform 0.2s, font-size 0.2s;
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+}
+.menu-lateral a:hover {
+    color: #ffb3b3;
+    transform: scale(1.13);
+    background: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+} 

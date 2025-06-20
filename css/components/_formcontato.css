@@ -1,0 +1,50 @@
+/* Estilos do formulário de contato */
+.form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(153,0,0,0.07);
+}
+.form-contato label {
+    color: var(--vermelho-noventa);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+}
+.form-contato button[type="submit"] {
+    background: var(--vermelho-noventa);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+.form-contato button[type="submit"]:hover {
+    background: var(--vermelho-noventa);
+}
+main.container {
+    margin-top: 40px !important;
+}
+main.container > h1 {
+    text-align: center;
+    color: var(--vermelho-noventa);
+    margin-bottom: 2rem;
+} 

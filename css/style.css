@@ -1,27 +1,13 @@
-/* ==================== FONTE PERSONALIZADA ==================== */
-@font-face {
-    font-family: 'FonteNoventaPrincipal';
-    src: url('/assets/fontes/Akira\ Expanded\ Demo.otf') format('truetype');
-}
+@import url('base/_reset.css');
+@import url('base/_variables.css');
+@import url('base/_typography.css');
+@import url('components/_header.css');
+@import url('components/_footer.css');
+@import url('components/_buttons.css');
+@import url('components/_fotoshome.css');
+@import url('components/_sidebar.css');
+@import url('components/_formcontato.css');
 
-@font-face {
-    font-family: 'TTInterphasesProDemiBold';
-    src: url('/assets/fontes/TT\ Interphases\ Pro\ Trial\ ExtraBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-/* ==================== RESET E BASE ==================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
-    background-color: #fdfcf6;
-}
 
 /* ==================== CONTAINER ==================== */
 .container {
@@ -30,62 +16,6 @@ body {
     height: auto;
     margin: 0 auto;
     padding: 1rem 0;
-}
-
-/* ==================== CABEÇALHO ==================== */
-.cabecalho {
-    background: var(--vermelho-noventa);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 80px;
-}
-
-.container-cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 10px;
-    position: relative;
-}
-
-/* Logo com efeito de destaque animado */
-.logo-titulo {
-    font-size: 4rem;
-    font-weight: 900;
-    text-decoration: none;
-    background: linear-gradient(270deg,
-            #ffffff 0%,
-            #ffffff 30%,
-            #ff3333 45%,
-            #990000 50%,
-            #ff3333 55%,
-            #ffffff 70%,
-            #ffffff 100%);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: brilhoMovimento 15s ease-in-out infinite;
-    user-select: none;
-    text-shadow:
-        inset 0 0 8px rgba(255, 255, 255, 0.6),
-        0 0 5px rgba(153, 0, 0, 0.7);
-    font-family: 'FonteNoventaPrincipal', sans-serif;
-}
-
-@keyframes brilhoMovimento {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 200% 50%;
-    }
 }
 
 /* ==================== HERO (VÍDEO) ==================== */
@@ -116,28 +46,6 @@ body {
     width: 100%;
     height: 100%;
     border: none;
-}
-
-/* ==================== GALERIA ==================== */
-#galeria {
-    column-count: 3;
-    column-gap: 1rem;
-    margin-top: 6rem;
-    padding: 0.5rem;
-}
-
-.bloco-foto {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1rem;
-    break-inside: avoid;
-}
-
-.bloco-foto img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
 }
 
 /* ==================== GALERIA DE EVENTOS ==================== */
@@ -273,151 +181,6 @@ body {
     }
 }
 
-/* ==================== RODAPÉ ==================== */
-.rodape {
-    color: var(--vermelho-noventa);
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* ==================== MENU HAMBÚRGUER ==================== */
-.menu-hamburguer {
-    position: absolute;
-    right: 36px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 20px;
-    height: 14px;
-    cursor: pointer;
-    z-index: 1001;
-    transition: transform 0.3s ease;
-}
-
-.menu-hamburguer:hover {
-    transform: translateY(-50%) scale(1.1);
-}
-
-.ponto {
-    width: 6px;
-    height: 6px;
-    background-color: white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-/* Animação do menu quando ativo */
-.menu-hamburguer.ativo .ponto:nth-child(1) {
-    transform: translateX(-8px) scale(0.8);
-    opacity: 0.7;
-}
-
-.menu-hamburguer.ativo .ponto:nth-child(2) {
-    transform: scale(1.2);
-}
-
-.menu-hamburguer.ativo .ponto:nth-child(3) {
-    transform: translateX(8px) scale(0.8);
-    opacity: 0.7;
-}
-
-/* ==================== PAINEL LATERAL ==================== */
-.painel-lateral {
-    position: fixed;
-    top: 0;
-    right: -350px;
-    width: 350px;
-    height: 100vh;
-    background: var(--vermelho-noventa);
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: right 0.4s ease;
-    overflow-y: auto;
-}
-
-.painel-lateral.aberto {
-    right: 0;
-}
-
-.painel-cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #fff3;
-}
-
-.painel-cabecalho h3 {
-    color: #fff;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 0.7rem;
-}
-
-.botao-fechar-painel {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-
-.botao-fechar-painel:hover {
-    color: #ffb3b3;
-}
-
-.painel-conteudo {
-    padding: 20px;
-}
-
-.menu-lateral ul {
-    list-style: none;
-    padding: 0 2.2rem;
-    margin: 0;
-}
-
-.menu-lateral li {
-    margin: 1.3rem 0;
-}
-
-.menu-lateral a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.45rem;
-    transition: color 0.2s, transform 0.2s, font-size 0.2s;
-    display: inline-block;
-    padding: 0;
-    border-radius: 0;
-}
-
-.menu-lateral a:hover {
-    color: #ffb3b3;
-    transform: scale(1.13);
-    background: none;
-}
-
-/* ==================== OVERLAY ==================== */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.3);
-    z-index: 900;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.overlay.ativo {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* ==================== FORMULÁRIO DE CONTATO ==================== */
 .form-contato {
     max-width: 500px;
@@ -459,19 +222,4 @@ body {
 }
 .form-contato button[type="submit"]:hover {
     background: var(--vermelho-noventa);
-}
-
-/* Centraliza e estiliza o título da página de contato */
-main.container {
-    margin-top: 40px !important;
-}
-
-main.container > h1 {
-    text-align: center;
-    color: var(--vermelho-noventa);
-    margin-bottom: 2rem;
-}
-
-:root {
-    --vermelho-noventa: #c70223;
 }
