@@ -1,8 +1,20 @@
+/* Configuração para o body usar flexbox */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container principal para empurrar o footer para baixo */
+.container {
+  flex: 1 0 auto;
+}
+
 .rodape {
   background: var(--cor-secundaria);
   color: var(--vermelho-noventa);
   text-align: center;
   padding: 1.5rem 0;
   font-size: 1rem;
-  margin-top: 2rem;
+  flex-shrink: 0;
 }

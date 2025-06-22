@@ -13,9 +13,18 @@
 .container {
     width: 95%;
     max-width: 1400px;
-    height: auto;
     margin: 0 auto;
     padding: 1rem 0;
+    flex: 1 0 auto;
+}
+
+/* ==================== TÍTULO ABOUT ==================== */
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 3rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
 }
 
 /* ==================== HERO (VÍDEO) ==================== */
@@ -50,7 +59,7 @@
 
 /* ==================== GALERIA DE EVENTOS ==================== */
 #galeria-eventos {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 2rem 0;
 }
 
@@ -73,6 +82,47 @@
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo especial para o evento Premiere com background */
+.evento[href="premiere.html"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('../assets/imagens/fotos_home/foto11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border-left: none;
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.evento[href="premiere.html"] h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.evento[href="premiere.html"] .data-evento {
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.evento[href="premiere.html"] .descricao-evento {
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.evento[href="premiere.html"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url('../assets/imagens/fotos_home/foto11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .evento:hover {
