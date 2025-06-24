@@ -53,3 +53,57 @@
         background-position: 200% 50%;
     }
 }
+
+/* ==================== RESPONSIVIDADE DO HEADER ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .cabecalho {
+        height: 70px;
+    }
+    
+    .logo-titulo {
+        font-size: 3.5rem;
+    }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+    .cabecalho {
+        height: 60px;
+    }
+    
+    .logo-titulo {
+        font-size: 3rem;
+    }
+    
+    .container-cabecalho {
+        padding: 0 8px;
+    }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+    .cabecalho {
+        height: 55px;
+    }
+    
+    .logo-titulo {
+        font-size: 2.5rem;
+    }
+    
+    .container-cabecalho {
+        padding: 0 5px;
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+    .cabecalho {
+        height: 50px;
+    }
+    
+    .logo-titulo {
+        font-size: 2rem;
+    }
+}

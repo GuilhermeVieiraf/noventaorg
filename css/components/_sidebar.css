@@ -113,4 +113,145 @@
 .overlay.ativo {
     opacity: 1;
     visibility: visible;
+}
+
+/* ==================== RESPONSIVIDADE DO SIDEBAR ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .painel-lateral {
+        width: 320px;
+        right: -320px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 2rem;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.3rem;
+    }
+    
+    .menu-lateral li {
+        margin: 1.2rem 0;
+    }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        right: 20px;
+        width: 18px;
+        height: 12px;
+    }
+    
+    .ponto {
+        width: 5px;
+        height: 5px;
+    }
+    
+    .painel-lateral {
+        width: 280px;
+        right: -280px;
+    }
+    
+    .painel-cabecalho {
+        padding: 0.8rem;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.8rem;
+    }
+    
+    .menu-lateral ul {
+        padding: 0 1.8rem;
+    }
+    
+    .menu-lateral li {
+        margin: 1rem 0;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+    .menu-hamburguer {
+        right: 15px;
+        width: 16px;
+        height: 10px;
+    }
+    
+    .ponto {
+        width: 4px;
+        height: 4px;
+    }
+    
+    .painel-lateral {
+        width: 250px;
+        right: -250px;
+    }
+    
+    .painel-cabecalho {
+        padding: 0.6rem;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.6rem;
+    }
+    
+    .menu-lateral ul {
+        padding: 0 1.5rem;
+    }
+    
+    .menu-lateral li {
+        margin: 0.8rem 0;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+    .menu-hamburguer {
+        right: 10px;
+        width: 14px;
+        height: 9px;
+    }
+    
+    .ponto {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .painel-lateral {
+        width: 220px;
+        right: -220px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.4rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.4rem;
+    }
+    
+    .menu-lateral a {
+        font-size: 1rem;
+    }
 } 

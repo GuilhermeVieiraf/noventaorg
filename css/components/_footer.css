@@ -18,3 +18,37 @@ body {
   font-size: 1rem;
   flex-shrink: 0;
 }
+
+/* ==================== RESPONSIVIDADE DO FOOTER ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .rodape {
+    padding: 1.3rem 0;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+  .rodape {
+    padding: 1.1rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+  .rodape {
+    padding: 1rem 0;
+    font-size: 0.85rem;
+  }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+  .rodape {
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+  }
+}

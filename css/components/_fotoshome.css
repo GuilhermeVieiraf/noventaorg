@@ -25,3 +25,55 @@
   border-radius: 0;
   object-fit: contain;
 }
+
+/* ==================== RESPONSIVIDADE DA GALERIA DE FOTOS ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  #fotos-home {
+    column-count: 2;
+    column-gap: 0.8rem;
+    margin-top: 5rem;
+    padding: 0.4rem;
+  }
+  
+  #fotos-home .bloco-foto {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+  #fotos-home {
+    column-count: 2;
+    column-gap: 0.6rem;
+    margin-top: 4rem;
+    padding: 0.3rem;
+  }
+  
+  #fotos-home .bloco-foto {
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+  #fotos-home {
+    column-count: 1;
+    column-gap: 0.5rem;
+    margin-top: 3rem;
+    padding: 0.2rem;
+  }
+  
+  #fotos-home .bloco-foto {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+  #fotos-home {
+    margin-top: 2.5rem;
+    padding: 0.1rem;
+  }
+}

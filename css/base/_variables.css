@@ -5,4 +5,12 @@
   --vermelho-noventa: #c70223;
   --fonte-noventa: 'TTInterphasesProDemiBold', Arial, sans-serif;
   --fonte-titulo: 'Akira Expanded Demo', Arial, sans-serif;
+  
+  /* Variáveis adicionais para a shop */
+  --cor-fundo: #ffffff;
+  --cor-fundo-secundaria: #f8f9fa;
+  --cor-texto: #333333;
+  --cor-texto-secundaria: #666666;
+  --cor-borda: #e0e0e0;
+  --cor-destaque-hover: #d32f2f;
 }

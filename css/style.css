@@ -7,6 +7,7 @@
 @import url('components/_fotoshome.css');
 @import url('components/_sidebar.css');
 @import url('components/_formcontato.css');
+@import url('components/_shop.css');
 
 
 /* ==================== CONTAINER ==================== */
@@ -272,4 +273,128 @@
 }
 .form-contato button[type="submit"]:hover {
     background: var(--vermelho-noventa);
+}
+
+/* ==================== RESPONSIVIDADE GERAL ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 0.8rem 0;
+    }
+    
+    .container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    #hero {
+        height: 50vh;
+        margin-top: 80px;
+    }
+    
+    .video-noventa {
+        max-width: 700px;
+        height: 350px;
+    }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0.5rem 0;
+    }
+    
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #hero {
+        height: 40vh;
+        margin-top: 80px;
+    }
+    
+    .video-noventa {
+        max-width: 100%;
+        height: 250px;
+    }
+    
+    /* Formulário de contato */
+    .form-contato {
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+        margin: 0 1rem;
+    }
+    
+    .form-contato input,
+    .form-contato textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .form-contato button[type="submit"] {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+        padding: 0.3rem 0;
+    }
+    
+    .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    #hero {
+        height: 35vh;
+        margin-top: 80px;
+    }
+    
+    .video-noventa {
+        height: 200px;
+    }
+    
+    /* Formulário de contato */
+    .form-contato {
+        padding: 1rem 0.8rem;
+        margin: 0 0.5rem;
+    }
+    
+    .form-contato label {
+        font-size: 0.9rem;
+    }
+    
+    .form-contato input,
+    .form-contato textarea {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .form-contato button[type="submit"] {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+    
+    #hero {
+        height: 30vh;
+    }
+    
+    .video-noventa {
+        height: 180px;
+    }
 }
