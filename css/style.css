@@ -19,20 +19,115 @@
     flex: 1 0 auto;
 }
 
+/* Primeiro container de cada página - compensa o header */
+body > .container:first-of-type {
+    margin-top: 50px;
+}
+
+/* Sobrescreve o flex do container quando usado no footer */
+footer.container {
+    flex: none;
+    margin-top: auto;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
 /* ==================== TÍTULO ABOUT ==================== */
 .container h1 {
     text-align: center;
     font-size: 3rem;
     color: var(--vermelho-noventa);
-    margin-bottom: 3rem;
+    margin-bottom: 0.1rem;
     font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+/* ==================== ESTILO DO TEXTO ABOUT ==================== */
+.conteudo-about {
+    background: var(--vermelho-noventa);
+    padding: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-secao-1 {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-texto {
+    flex: 1;
+}
+
+.about-texto p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #ffffff;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.about-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-foto img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-secao-2 {
+    margin-top: 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about-foto-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-foto-2 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-texto-2 {
+    flex: 1;
+}
+
+.about-texto-2 p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #ffffff;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* ==================== HERO (VÍDEO) ==================== */
 #hero {
     width: 100%;
     height: 60vh;
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,14 +379,42 @@
         padding: 0.8rem 0;
     }
     
+    body > .container:first-of-type {
+        margin-top: 70px;
+    }
+    
     .container h1 {
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .conteudo-about {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+        max-width: 90%;
+    }
+    
+    .about-texto p {
+        font-size: 1.3rem;
+        line-height: 1.9;
+    }
+    
+    .about-texto-2 p {
+        font-size: 1.3rem;
+        line-height: 1.9;
+    }
+    
+    .about-foto img {
+        max-width: 450px;
+    }
+    
+    .about-foto-2 img {
+        max-width: 450px;
     }
     
     #hero {
         height: 50vh;
-        margin-top: 80px;
+        margin-top: 70px;
     }
     
     .video-noventa {
@@ -307,14 +430,55 @@
         padding: 0.5rem 0;
     }
     
+    body > .container:first-of-type {
+        margin-top: 60px;
+    }
+    
     .container h1 {
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .conteudo-about {
+        padding: 1rem;
+        margin-top: 1rem;
+        max-width: 95%;
+    }
+    
+    .about-secao-1 {
+        flex-direction: column;
+        gap: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .about-secao-2 {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .about-texto p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+    
+    .about-texto-2 p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+    
+    .about-foto img {
+        max-width: 100%;
+    }
+    
+    .about-foto-2 img {
+        max-width: 100%;
     }
     
     #hero {
         height: 40vh;
-        margin-top: 80px;
+        margin-top: 60px;
     }
     
     .video-noventa {
@@ -348,14 +512,55 @@
         padding: 0.3rem 0;
     }
     
+    body > .container:first-of-type {
+        margin-top: 50px;
+    }
+    
     .container h1 {
         font-size: 1.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .conteudo-about {
+        padding: 0.8rem;
+        margin-top: 0.8rem;
+        max-width: 98%;
+    }
+    
+    .about-secao-1 {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .about-secao-2 {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .about-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+    
+    .about-texto-2 p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+    
+    .about-foto img {
+        max-width: 100%;
+    }
+    
+    .about-foto-2 img {
+        max-width: 100%;
     }
     
     #hero {
         height: 35vh;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     
     .video-noventa {

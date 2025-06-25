@@ -10,6 +10,12 @@ body {
   flex: 1 0 auto;
 }
 
+/* Container específico para o footer - remove o flex para não expandir */
+.container.rodape {
+  flex: none;
+  margin-top: auto;
+}
+
 .rodape {
   background: var(--cor-secundaria);
   color: var(--vermelho-noventa);
@@ -17,6 +23,8 @@ body {
   padding: 1.5rem 0;
   font-size: 1rem;
   flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 /* ==================== RESPONSIVIDADE DO FOOTER ==================== */

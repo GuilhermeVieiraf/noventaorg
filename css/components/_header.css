@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    height: 80px;
+    height: 120px;
 }
 
 .container-cabecalho {
@@ -19,39 +19,20 @@
     position: relative;
 }
 
-/* Logo com efeito de destaque animado */
+/* Logo com a foto inteira */
 .logo-titulo {
-    font-size: 4rem;
-    font-weight: 900;
+    display: inline-block;
+    height: 100px;
+    width: 400px;
+    background: url('/assets/imagens/noventão.jpg') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
     text-decoration: none;
-    background: linear-gradient(270deg,
-            #ffffff 0%,
-            #ffffff 30%,
-            #ff3333 45%,
-            #990000 50%,
-            #ff3333 55%,
-            #ffffff 70%,
-            #ffffff 100%);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: brilhoMovimento 15s ease-in-out infinite;
-    user-select: none;
-    text-shadow:
-        inset 0 0 8px rgba(255, 255, 255, 0.6),
-        0 0 5px rgba(153, 0, 0, 0.7);
-    font-family: 'FonteNoventaPrincipal', sans-serif;
+    transition: all 0.3s ease;
 }
 
-@keyframes brilhoMovimento {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 200% 50%;
-    }
+.logo-titulo:hover {
+    transform: scale(1.05);
 }
 
 /* ==================== RESPONSIVIDADE DO HEADER ==================== */
@@ -59,22 +40,24 @@
 /* Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
     .cabecalho {
-        height: 70px;
+        height: 110px;
     }
     
     .logo-titulo {
-        font-size: 3.5rem;
+        height: 90px;
+        width: 350px;
     }
 }
 
 /* Tablets pequenos e celulares grandes (481px - 768px) */
 @media (max-width: 768px) {
     .cabecalho {
-        height: 60px;
+        height: 100px;
     }
     
     .logo-titulo {
-        font-size: 3rem;
+        height: 80px;
+        width: 280px;
     }
     
     .container-cabecalho {
@@ -85,11 +68,12 @@
 /* Celulares (320px - 480px) */
 @media (max-width: 480px) {
     .cabecalho {
-        height: 55px;
+        height: 90px;
     }
     
     .logo-titulo {
-        font-size: 2.5rem;
+        height: 70px;
+        width: 200px;
     }
     
     .container-cabecalho {
@@ -100,10 +84,11 @@
 /* Celulares muito pequenos (até 320px) */
 @media (max-width: 320px) {
     .cabecalho {
-        height: 50px;
+        height: 80px;
     }
     
     .logo-titulo {
-        font-size: 2rem;
+        height: 60px;
+        width: 160px;
     }
 }
