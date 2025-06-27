@@ -21,7 +21,7 @@
 
 /* Primeiro container de cada página - compensa o header */
 body > .container:first-of-type {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* Sobrescreve o flex do container quando usado no footer */
@@ -65,7 +65,7 @@ footer.container {
 }
 
 .about-texto p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2;
     color: #ffffff;
     text-align: justify;
@@ -114,7 +114,7 @@ footer.container {
 }
 
 .about-texto-2 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2;
     color: #ffffff;
     text-align: justify;
@@ -380,7 +380,7 @@ footer.container {
     }
     
     body > .container:first-of-type {
-        margin-top: 70px;
+        margin-top: 30px;
     }
     
     .container h1 {
@@ -395,12 +395,12 @@ footer.container {
     }
     
     .about-texto p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.9;
     }
     
     .about-texto-2 p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.9;
     }
     
@@ -421,6 +421,28 @@ footer.container {
         max-width: 700px;
         height: 350px;
     }
+    
+    /* Página Premiere */
+    .premiere-info h2 {
+        font-size: 2rem;
+    }
+    
+    .data-premiere {
+        font-size: 1.1rem;
+    }
+    
+    .descricao-premiere {
+        font-size: 1.1rem;
+    }
+    
+    .fotos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .fotos-grid .bloco-foto img {
+        height: 200px;
+    }
 }
 
 /* Tablets pequenos e celulares grandes (481px - 768px) */
@@ -431,7 +453,7 @@ footer.container {
     }
     
     body > .container:first-of-type {
-        margin-top: 60px;
+        margin-top: 30px;
     }
     
     .container h1 {
@@ -457,13 +479,13 @@ footer.container {
     }
     
     .about-texto p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         line-height: 1.8;
         text-align: left;
     }
     
     .about-texto-2 p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         line-height: 1.8;
         text-align: left;
     }
@@ -503,6 +525,50 @@ footer.container {
         padding: 0.8rem;
         font-size: 1rem;
     }
+    
+    /* Página Premiere */
+    .premiere-info {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .premiere-info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .data-premiere {
+        font-size: 1rem;
+    }
+    
+    .descricao-premiere {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .fotos-premiere h3 {
+        font-size: 1.6rem;
+    }
+    
+    .fotos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .fotos-grid .bloco-foto img {
+        height: 180px;
+    }
+    
+    .premiere-detalhes {
+        padding: 1.5rem;
+    }
+    
+    .premiere-detalhes h3 {
+        font-size: 1.5rem;
+    }
+    
+    .premiere-detalhes p {
+        font-size: 1rem;
+    }
 }
 
 /* Celulares (320px - 480px) */
@@ -513,7 +579,7 @@ footer.container {
     }
     
     body > .container:first-of-type {
-        margin-top: 50px;
+        margin-top: 20px;
     }
     
     .container h1 {
@@ -539,13 +605,13 @@ footer.container {
     }
     
     .about-texto p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 1.7;
         margin-bottom: 0;
     }
     
     .about-texto-2 p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 1.7;
         margin-bottom: 0;
     }
@@ -587,6 +653,50 @@ footer.container {
         padding: 0.7rem;
         font-size: 0.95rem;
     }
+    
+    /* Página Premiere */
+    .premiere-info {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .premiere-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .data-premiere {
+        font-size: 0.9rem;
+    }
+    
+    .descricao-premiere {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .fotos-premiere h3 {
+        font-size: 1.3rem;
+    }
+    
+    .fotos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .fotos-grid .bloco-foto img {
+        height: 200px;
+    }
+    
+    .premiere-detalhes {
+        padding: 1rem;
+    }
+    
+    .premiere-detalhes h3 {
+        font-size: 1.2rem;
+    }
+    
+    .premiere-detalhes p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Celulares muito pequenos (até 320px) */
@@ -601,5 +711,279 @@ footer.container {
     
     .video-noventa {
         height: 180px;
+    }
+}
+
+/* ==================== PÁGINA PREMIERE ==================== */
+.premiere-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.premiere-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--vermelho-noventa);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.premiere-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.data-premiere {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    opacity: 0.9;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.descricao-premiere {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.fotos-premiere {
+    margin-bottom: 3rem;
+}
+
+.fotos-premiere h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 2rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fotos-grid .bloco-foto {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotos-grid .bloco-foto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fotos-grid .bloco-foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.fotos-grid .bloco-foto:hover img {
+    transform: scale(1.05);
+}
+
+.premiere-detalhes {
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 15px;
+    border-left: 5px solid var(--vermelho-noventa);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.premiere-detalhes h3 {
+    font-size: 1.8rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 1rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.premiere-detalhes p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.premiere-info {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.premiere-info h2 {
+    font-size: 1.8rem;
+}
+
+.data-premiere {
+    font-size: 1rem;
+}
+
+.descricao-premiere {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.fotos-premiere h3 {
+    font-size: 1.6rem;
+}
+
+.fotos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+
+.fotos-grid .bloco-foto img {
+    height: 100%;
+}
+
+.premiere-detalhes {
+    padding: 1.5rem;
+}
+
+.premiere-detalhes h3 {
+    font-size: 1.5rem;
+}
+
+.premiere-detalhes p {
+    font-size: 1rem;
+}
+
+.premiere-info {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.premiere-info h2 {
+    font-size: 1.5rem;
+}
+
+.data-premiere {
+    font-size: 0.9rem;
+}
+
+.descricao-premiere {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.fotos-premiere h3 {
+    font-size: 1.3rem;
+}
+
+.fotos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+
+.fotos-grid .bloco-foto img {
+    height: 200px;
+}
+
+.premiere-detalhes {
+    padding: 1rem;
+}
+
+.premiere-detalhes h3 {
+    font-size: 1.2rem;
+}
+
+.premiere-detalhes p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+/* ==================== MODAL DE EXPANSÃO DE FOTOS ==================== */
+.modal-foto {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s ease;
+}
+
+.fechar-modal:hover {
+    color: var(--vermelho-noventa);
+}
+
+#foto-expandida {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Cursor pointer nas fotos clicáveis */
+.fotos-grid .bloco-foto {
+    cursor: pointer;
+}
+
+/* Responsividade do modal */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 10px;
+    }
+    
+    .fechar-modal {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    #foto-expandida {
+        max-width: 95%;
+        max-height: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fechar-modal {
+        top: 5px;
+        right: 15px;
+        font-size: 25px;
     }
 }
