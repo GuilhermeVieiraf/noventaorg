@@ -7,7 +7,7 @@
 @import url('components/_fotoshome.css');
 @import url('components/_sidebar.css');
 @import url('components/_formcontato.css');
-@import url('components/_shop.css');
+
 
 
 /* ==================== CONTAINER ==================== */
@@ -155,7 +155,6 @@ footer.container {
 
 /* ==================== GALERIA DE EVENTOS ==================== */
 #galeria-eventos {
-    margin-top: 2rem;
     padding: 2rem 0;
 }
 
@@ -986,4 +985,174 @@ footer.container {
         right: 15px;
         font-size: 25px;
     }
+}
+
+/* ==================== PÁGINA SHOP ==================== */
+.shop-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+.shop-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Quando há mais de um produto, expande o grid */
+.produtos-grid:has(.produto-card:nth-child(2)) {
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Card de Produto */
+.produto-card {
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover .produto-imagem img {
+    transform: scale(1.05);
+}
+
+.produto-info {
+    padding: 1.5rem;
+}
+
+.produto-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto);
+    font-weight: 600;
+}
+
+.produto-descricao {
+    color: var(--cor-texto-secundaria);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.produto-preco {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.botao-comprar {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background: var(--cor-destaque);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background: var(--cor-destaque-hover);
+}
+
+/* Informações da Loja */
+.shop-info {
+    text-align: center;
+    padding: 2rem;
+    background: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.shop-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto);
+}
+
+.shop-info p {
+    color: var(--cor-texto-secundaria);
+    line-height: 1.6;
+}
+
+/* Estilos específicos para o produto Noventa Magazine */
+.produto-noventa {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.produto-noventa:hover {
+    transform: scale(1.02);
+}
+
+.produto-noventa-imagem {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.produto-noventa-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produto-noventa-info h3 {
+    text-align: center;
+    color: var(--vermelho-noventa);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.produto-noventa-info p {
+    text-align: center;
+    color: var(--vermelho-noventa);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
 }

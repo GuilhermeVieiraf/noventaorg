@@ -7,7 +7,9 @@
     top: 0;
     left: 0;
     z-index: 10;
-    height: 120px;
+    height: 120px !important;
+    min-height: 120px !important;
+    max-height: 120px !important;
 }
 
 .container-cabecalho {
@@ -19,16 +21,23 @@
     position: relative;
 }
 
-/* Logo com a foto inteira */
+/* Logo com a foto inteira - Padrão (Home) */
 .logo-titulo {
     display: inline-block;
-    height: 100px;
-    width: 400px;
+    height: 100px !important;
+    width: 400px !important;
     background: url('/assets/imagens/noventão.jpg') center center;
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+/* Imagem específica para página Premiere */
+.logo-titulo.premiere {
+    background: url('/assets/imagens/gallery/9! png.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .logo-titulo:hover {
@@ -92,3 +101,5 @@
         width: 160px;
     }
 }
+
+/* Removido CSS específico para body.gallery para garantir header igual em todas as páginas */

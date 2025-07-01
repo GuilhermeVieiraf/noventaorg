@@ -46,6 +46,21 @@
     transition: right 0.4s ease;
     overflow-y: auto;
 }
+
+.painel-lateral::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/imagens/fotoAdesivos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
 .painel-lateral.aberto {
     right: 0;
 }
@@ -54,13 +69,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid #fff3;
+    min-height: 120px;
 }
 .painel-cabecalho h3 {
     color: #fff;
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0.7rem;
+    opacity: 1;
 }
 .botao-fechar-painel {
     background: none;
@@ -157,6 +173,7 @@
     
     .painel-cabecalho {
         padding: 0.8rem;
+        min-height: 100px;
     }
     
     .painel-cabecalho h3 {
@@ -201,6 +218,7 @@
     
     .painel-cabecalho {
         padding: 0.6rem;
+        min-height: 90px;
     }
     
     .painel-cabecalho h3 {
