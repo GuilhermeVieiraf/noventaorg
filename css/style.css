@@ -498,13 +498,14 @@ footer.container {
     }
     
     #hero {
-        height: 40vh;
+        height: 35vh;
+        min-height: 220px;
         margin-top: 60px;
     }
     
     .video-noventa {
-        max-width: 100%;
-        height: 250px;
+        max-width: 100vw;
+        height: 200px;
     }
     
     /* Formulário de contato */
@@ -574,7 +575,7 @@ footer.container {
 @media (max-width: 480px) {
     .container {
         width: 98%;
-        padding: 0.3rem 0;
+        padding: 0.5rem 0;
     }
     
     body > .container:first-of-type {
@@ -624,12 +625,14 @@ footer.container {
     }
     
     #hero {
-        height: 35vh;
-        margin-top: 50px;
+        height: 28vh;
+        min-height: 140px;
+        margin-top: 40px;
     }
     
     .video-noventa {
-        height: 200px;
+        max-width: 100vw;
+        height: 120px;
     }
     
     /* Formulário de contato */
@@ -1155,4 +1158,69 @@ footer.container {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    display: none;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--cor-fundo);
+    /* background: url('/assets/imagens/9!fundo.png') no-repeat center center fixed; */
+    /* background-size: cover; */
+}
+
+/* ==================== AJUSTES DE RESPONSIVIDADE EXTRA ==================== */
+
+@media (max-width: 768px) {
+    #hero {
+        height: 35vh;
+        min-height: 220px;
+        margin-top: 60px;
+    }
+    .video-noventa {
+        max-width: 100vw;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 28vh;
+        min-height: 140px;
+        margin-top: 40px;
+    }
+    .video-noventa {
+        max-width: 100vw;
+        height: 120px;
+    }
+    .container {
+        padding: 0.5rem 0;
+    }
+    .bloco-foto {
+        margin-bottom: 0.3rem;
+    }
+    .rodape {
+        font-size: 0.8rem;
+        padding: 0.7rem 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0.2rem 0;
+    }
+    .rodape {
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }
+}
+
+.cabecalho {
+    background: var(--vermelho-noventa); /* reforça fundo sólido no header */
+    position: relative;
+    z-index: 10;
 }

@@ -1,4 +1,5 @@
 :root {
+  --cor-fundo: #fdfcf6;
   --cor-primaria: #111;
   --cor-secundaria: #fdfcf6;
   --cor-destaque: #e63946;
@@ -7,7 +8,6 @@
   --fonte-titulo: 'Akira Expanded Demo', Arial, sans-serif;
   
   /* Variáveis adicionais para a shop */
-  --cor-fundo: #ffffff;
   --cor-fundo-secundaria: #f8f9fa;
   --cor-texto: #333333;
   --cor-texto-secundaria: #666666;
