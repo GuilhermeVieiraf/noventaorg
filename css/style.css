@@ -182,27 +182,44 @@ footer.container {
 /* Estilo especial para o evento Premiere com background */
 .evento[href="premiere.html"] {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url('../assets/imagens/fotos_home/foto11.jpg');
+                url('/assets/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     border-left: none;
     position: relative;
-    min-height: 200px;
+    min-height: 300px;
+    height: 300px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 !important;
 }
 
 .evento[href="premiere.html"] h2 {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.2rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
 
 .evento[href="premiere.html"] .data-evento {
-    color: #f0f0f0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    margin-top: 0.2rem;
 }
 
 .evento[href="premiere.html"] .descricao-evento {
@@ -214,7 +231,7 @@ footer.container {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                url('../assets/imagens/fotos_home/foto11.jpg');
+                url('/assets/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -959,6 +976,40 @@ footer.container {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Setas de navegação do modal */
+.seta-navegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 48px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10001;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.seta-navegacao:hover {
+    color: var(--vermelho-noventa);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.seta-esquerda {
+    left: 20px;
+}
+
+.seta-direita {
+    right: 20px;
+}
+
 /* Cursor pointer nas fotos clicáveis */
 .fotos-grid .bloco-foto {
     cursor: pointer;
@@ -980,6 +1031,18 @@ footer.container {
         max-width: 95%;
         max-height: 95%;
     }
+    
+    .seta-navegacao {
+        font-size: 36px;
+    }
+    
+    .seta-esquerda {
+        left: 10px;
+    }
+    
+    .seta-direita {
+        right: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -987,6 +1050,18 @@ footer.container {
         top: 5px;
         right: 15px;
         font-size: 25px;
+    }
+    
+    .seta-navegacao {
+        font-size: 28px;
+    }
+    
+    .seta-esquerda {
+        left: 5px;
+    }
+    
+    .seta-direita {
+        right: 5px;
     }
 }
 
@@ -1223,4 +1298,29 @@ body {
     background: var(--vermelho-noventa); /* reforça fundo sólido no header */
     position: relative;
     z-index: 10;
+}
+
+.header-home {
+    position: relative;
+    background: var(--vermelho-noventa);
+}
+.header-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/assets/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background-size: 60%;
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+}
+.header-home > * {
+    position: relative;
+    z-index: 1;
+}
+.header-home .logo-titulo {
+    background-image: url('/assets/imagens/noventãoSemFundo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
