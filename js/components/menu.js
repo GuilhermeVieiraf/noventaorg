@@ -5,6 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.getElementById('overlay');
     const fecharPainel = document.getElementById('botao-fechar-painel');
 
+    // Verifica se os elementos existem e se os eventos não foram inicializados
+    if (!menuHamburguer || !painelLateral || !overlay || !fecharPainel) {
+        console.log('Elementos do menu não encontrados no menu.js');
+        return;
+    }
+
+    // Verifica se os eventos já foram adicionados
+    if (menuHamburguer.hasAttribute('data-events-initialized')) {
+        console.log('Eventos do menu já foram inicializados, pulando...');
+        return;
+    }
+
+    console.log('Inicializando eventos do menu via menu.js');
+    
+    // Marca que os eventos foram inicializados
+    menuHamburguer.setAttribute('data-events-initialized', 'true');
+
     // Função para abrir o painel
     function abrirPainel() {
         painelLateral.classList.add('aberto');
@@ -40,4 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
             fecharPainelLateral();
         });
     });
+    
+    console.log('Eventos do menu inicializados com sucesso via menu.js!');
 }); 

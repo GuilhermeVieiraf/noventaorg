@@ -7,4 +7,6 @@
 html, body {
   height: 100%;
   font-family: inherit;
+  overflow-x: hidden; /* Evita scroll horizontal */
+  max-width: 100vw; /* Garante que não ultrapasse a viewport */
 }

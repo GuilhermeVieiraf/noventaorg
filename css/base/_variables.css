@@ -13,4 +13,18 @@
   --cor-texto-secundaria: #666666;
   --cor-borda: #e0e0e0;
   --cor-destaque-hover: #d32f2f;
+  
+  /* Variáveis para menu hambúrguer */
+  --ponto-transform-left: translateX(-8px) scale(0.8);
+  --ponto-transform-right: translateX(8px) scale(0.8);
+  
+  /* Responsivas para diferentes tamanhos */
+  --ponto-transform-left-tablet: translateX(-7px) scale(0.8);
+  --ponto-transform-right-tablet: translateX(7px) scale(0.8);
+  
+  --ponto-transform-left-mobile: translateX(-6px) scale(0.8);
+  --ponto-transform-right-mobile: translateX(6px) scale(0.8);
+  
+  --ponto-transform-left-small: translateX(-5px) scale(0.8);
+  --ponto-transform-right-small: translateX(5px) scale(0.8);
 }

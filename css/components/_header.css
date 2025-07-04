@@ -6,21 +6,32 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
+    max-width: 100%; /* Garante que não ultrapasse a viewport */
     top: 0;
     left: 0;
     z-index: 10;
     height: 120px !important;
     min-height: 120px !important;
     max-height: 120px !important;
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
 
 .container-cabecalho {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
     position: relative;
+    max-width: 100%; /* Garante que não ultrapasse a tela */
+    overflow: hidden; /* Evita vazamento de conteúdo */
+}
+
+/* Espacador invisível para equilibrar o layout */
+.espacador-esquerdo {
+    width: 20px; /* Mesma largura do menu hambúrguer */
+    height: 14px; /* Mesma altura do menu hambúrguer */
+    flex-shrink: 0; /* Não encolhe */
 }
 
 /* ==================== LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME) ==================== */
@@ -28,11 +39,13 @@
     display: inline-block;
     height: 100px !important;
     width: 400px !important;
+    max-width: calc(100% - 80px);
     background: url('/assets/imagens/9! png.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
     transition: all 0.3s ease;
+    flex-shrink: 1;
 }
 
 .logo-titulo:hover {
@@ -76,6 +89,15 @@
         height: 110px;
     }
     
+    .container-cabecalho {
+        padding: 0 18px;
+    }
+    
+    .espacador-esquerdo {
+        width: 20px;
+        height: 14px;
+    }
+    
     .logo-titulo {
         height: 90px;
         width: 350px;
@@ -88,13 +110,18 @@
         height: 100px;
     }
     
+    .container-cabecalho {
+        padding: 0 15px;
+    }
+    
+    .espacador-esquerdo {
+        width: 18px;
+        height: 12px;
+    }
+    
     .logo-titulo {
         height: 80px;
         width: 280px;
-    }
-    
-    .container-cabecalho {
-        padding: 0 8px;
     }
 }
 
@@ -104,13 +131,19 @@
         height: 90px;
     }
     
-    .logo-titulo {
-        height: 70px;
-        width: 200px;
+    .container-cabecalho {
+        padding: 0 10px;
     }
     
-    .container-cabecalho {
-        padding: 0 5px;
+    .espacador-esquerdo {
+        width: 16px;
+        height: 10px;
+    }
+    
+    .logo-titulo {
+        height: 70px;
+        width: 180px;
+        max-width: calc(100% - 60px);
     }
 }
 
@@ -120,9 +153,19 @@
         height: 80px;
     }
     
+    .container-cabecalho {
+        padding: 0 8px;
+    }
+    
+    .espacador-esquerdo {
+        width: 14px;
+        height: 9px;
+    }
+    
     .logo-titulo {
         height: 60px;
-        width: 160px;
+        width: 140px;
+        max-width: calc(100% - 50px);
     }
 }
 
