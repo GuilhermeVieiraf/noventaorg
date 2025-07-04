@@ -60,18 +60,52 @@ class HeaderComponent {
         // Adiciona ao DOM
         document.body.insertAdjacentHTML('afterbegin', headerHTML + sidebarHTML);
         
-        // Carrega o script do menu após inserir o HTML
-        this.loadMenuScript();
+        // Inicializa os eventos do menu
+        this.initializeMenuEvents();
     }
 
-    // Carrega o script do menu
-    loadMenuScript() {
-        const script = document.createElement('script');
-        script.src = 'js/components/menu.js';
-        script.onload = () => {
-            console.log('Menu script carregado com sucesso');
-        };
-        document.head.appendChild(script);
+    // Inicializa os eventos do menu
+    initializeMenuEvents() {
+        const menuHamburguer = document.getElementById('menu-hamburguer');
+        const painelLateral = document.getElementById('painel-lateral');
+        const botaoFecharPainel = document.getElementById('botao-fechar-painel');
+        const overlay = document.getElementById('overlay');
+
+        // Função para abrir o painel
+        function abrirPainel() {
+            painelLateral.classList.add('aberto');
+            overlay.classList.add('ativo');
+            menuHamburguer.classList.add('ativo');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Função para fechar o painel
+        function fecharPainelLateral() {
+            painelLateral.classList.remove('aberto');
+            overlay.classList.remove('ativo');
+            menuHamburguer.classList.remove('ativo');
+            document.body.style.overflow = '';
+        }
+
+        // Event listeners
+        menuHamburguer.addEventListener('click', abrirPainel);
+        botaoFecharPainel.addEventListener('click', fecharPainelLateral);
+        overlay.addEventListener('click', fecharPainelLateral);
+
+        // Fechar com tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && painelLateral.classList.contains('aberto')) {
+                fecharPainelLateral();
+            }
+        });
+
+        // Fechar ao clicar em links do menu
+        const linksMenu = document.querySelectorAll('.menu-lateral a');
+        linksMenu.forEach(link => {
+            link.addEventListener('click', function() {
+                fecharPainelLateral();
+            });
+        });
     }
 }
 
