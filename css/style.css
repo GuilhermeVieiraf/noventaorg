@@ -1282,6 +1282,14 @@ body {
         font-size: 0.8rem;
         padding: 0.7rem 0;
     }
+    .fotos-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .fotos-grid .bloco-foto img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
 }
 
 @media (max-width: 360px) {
