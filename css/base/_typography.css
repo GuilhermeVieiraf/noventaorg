@@ -11,6 +11,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TTInterphasesProMediumItalic';
+    src: url('/assets/fontes/TT Interphases Pro Trial Medium Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
 body {
   font-family: var(--fonte-noventa);
   color: var(--cor-primaria);
