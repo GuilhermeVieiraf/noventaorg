@@ -1,0 +1,15 @@
+{
+  "name": "@noventaorg/ui",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "echo 'UI package - JavaScript'",
+    "dev": "echo 'UI package - JavaScript'",
+    "clean": "echo 'UI package - JavaScript'"
+  },
+  "dependencies": {
+    "@noventaorg/shared": "workspace:*"
+  },
+  "devDependencies": {}
+} 

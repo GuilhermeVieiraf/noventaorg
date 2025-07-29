@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Java backend - use Maven/Gradle'",
+  "installCommand": "echo 'Java backend - no npm install needed'",
+  "framework": null,
+  "functions": {
+    "target/noventa-api-*.jar": {
+      "runtime": "java17"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ]
+} 
