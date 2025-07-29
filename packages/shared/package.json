@@ -1,0 +1,12 @@
+{
+  "name": "@noventaorg/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "echo 'Shared package - JavaScript'",
+    "dev": "echo 'Shared package - JavaScript'",
+    "clean": "echo 'Shared package - JavaScript'"
+  },
+  "devDependencies": {}
+} 

@@ -1,0 +1,294 @@
+/* Estilos do menu hambúrguer, painel lateral e overlay */
+.menu-hamburguer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+.menu-hamburguer:hover {
+    transform: scale(1.1);
+}
+.ponto {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.menu-hamburguer.ativo .ponto:nth-child(1) {
+    transform: var(--ponto-transform-left);
+    opacity: 0.7;
+}
+.menu-hamburguer.ativo .ponto:nth-child(2) {
+    transform: scale(1.2);
+}
+.menu-hamburguer.ativo .ponto:nth-child(3) {
+    transform: var(--ponto-transform-right);
+    opacity: 0.7;
+}
+.painel-lateral {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: var(--vermelho-noventa);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+
+.painel-lateral::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/frontend/assets/imagens/fotoAdesivos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
+.painel-lateral.aberto {
+    right: 0;
+}
+.painel-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: 120px;
+}
+.painel-cabecalho h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    opacity: 1;
+}
+.botao-fechar-painel {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.botao-fechar-painel:hover {
+    color: #ffb3b3;
+}
+.painel-conteudo {
+    padding: 20px;
+}
+.menu-lateral ul {
+    list-style: none;
+    padding: 0 2.2rem;
+    margin: 0;
+}
+.menu-lateral li {
+    margin: 1.3rem 0;
+}
+.menu-lateral a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.45rem;
+    transition: color 0.2s, transform 0.2s, font-size 0.2s;
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+}
+.menu-lateral a:hover {
+    color: #ffb3b3;
+    transform: scale(1.13);
+    background: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==================== RESPONSIVIDADE DO SIDEBAR ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .painel-lateral {
+        width: 320px;
+        right: -320px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 2rem;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.3rem;
+    }
+    
+    .menu-lateral li {
+        margin: 1.2rem 0;
+    }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        width: 18px;
+        height: 12px;
+    }
+    
+    .ponto {
+        width: 5px;
+        height: 5px;
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(1) {
+        transform: var(--ponto-transform-left-tablet);
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(3) {
+        transform: var(--ponto-transform-right-tablet);
+    }
+    
+    .painel-lateral {
+        width: 280px;
+        right: -280px;
+    }
+    
+    .painel-cabecalho {
+        padding: 0.8rem;
+        min-height: 100px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.8rem;
+    }
+    
+    .menu-lateral ul {
+        padding: 0 1.8rem;
+    }
+    
+    .menu-lateral li {
+        margin: 1rem 0;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+    .menu-hamburguer {
+        width: 16px;
+        height: 10px;
+    }
+    
+    .ponto {
+        width: 4px;
+        height: 4px;
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(1) {
+        transform: var(--ponto-transform-left-mobile);
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(3) {
+        transform: var(--ponto-transform-right-mobile);
+    }
+    
+    .painel-lateral {
+        width: 250px;
+        right: -250px;
+    }
+    
+    .painel-cabecalho {
+        padding: 0.6rem;
+        min-height: 90px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.6rem;
+    }
+    
+    .menu-lateral ul {
+        padding: 0 1.5rem;
+    }
+    
+    .menu-lateral li {
+        margin: 0.8rem 0;
+    }
+    
+    .menu-lateral a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+    .menu-hamburguer {
+        width: 14px;
+        height: 9px;
+    }
+    
+    .ponto {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(1) {
+        transform: var(--ponto-transform-left-small);
+    }
+    
+    .menu-hamburguer.ativo .ponto:nth-child(3) {
+        transform: var(--ponto-transform-right-small);
+    }
+    
+    .painel-lateral {
+        width: 220px;
+        right: -220px;
+    }
+    
+    .painel-cabecalho h3 {
+        font-size: 1.4rem;
+    }
+    
+    .botao-fechar-painel {
+        font-size: 1.4rem;
+    }
+    
+    .menu-lateral a {
+        font-size: 1rem;
+    }
+} 

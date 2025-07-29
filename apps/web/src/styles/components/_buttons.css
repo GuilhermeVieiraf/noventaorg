@@ -1,0 +1,17 @@
+/* Estilos para botões */ 
+.form-contato button,
+.btn {
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: var(--fonte-noventa);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form-contato button:hover,
+.btn:hover {
+  background: #b71c1c;
+} 

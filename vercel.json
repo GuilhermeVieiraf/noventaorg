@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": null,
+  "functions": {
+    "apps/api/src/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/apps/api/src/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/apps/web/$1"
+    }
+  ],
+  "outputDirectory": "apps/web/dist"
+} 

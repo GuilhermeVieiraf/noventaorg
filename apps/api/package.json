@@ -1,0 +1,16 @@
+{
+  "name": "@noventaorg/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Backend Java - Use Spring Boot'",
+    "build": "echo 'Backend Java - Use Maven/Gradle'",
+    "start": "echo 'Backend Java - Use java -jar'",
+    "lint": "echo 'Backend Java - Use Checkstyle/SpotBugs'",
+    "clean": "echo 'Backend Java - Use Maven/Gradle clean'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  }
+} 

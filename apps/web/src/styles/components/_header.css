@@ -1,0 +1,187 @@
+/* ==================== CABEÇALHO (HEADER) ==================== */
+
+/* ==================== HEADER PADRÃO ==================== */
+.cabecalho {
+    background: var(--vermelho-noventa);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Garante que não ultrapasse a viewport */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 120px !important;
+    min-height: 120px !important;
+    max-height: 120px !important;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+.container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+    max-width: 100%; /* Garante que não ultrapasse a tela */
+    overflow: hidden; /* Evita vazamento de conteúdo */
+}
+
+/* Espacador invisível para equilibrar o layout */
+.espacador-esquerdo {
+    width: 20px; /* Mesma largura do menu hambúrguer */
+    height: 14px; /* Mesma altura do menu hambúrguer */
+    flex-shrink: 0; /* Não encolhe */
+}
+
+/* ==================== LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME) ==================== */
+.logo-titulo {
+    display: inline-block;
+    height: 100px !important;
+    width: 400px !important;
+    max-width: calc(100% - 80px);
+    background: url('/frontend/assets/imagens/9! png.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex-shrink: 1;
+}
+
+.logo-titulo:hover {
+    transform: scale(1.05);
+}
+
+/* ==================== HEADER ESPECÍFICO - HOME ==================== */
+.header-home {
+    position: relative;
+    background: var(--vermelho-noventa);
+}
+
+.header-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/frontend/assets/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background-size: 60%;
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.header-home > * {
+    position: relative;
+    z-index: 1;
+}
+
+.header-home .logo-titulo {
+    background-image: url('/frontend/assets/imagens/noventãoSemFundo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ==================== RESPONSIVIDADE DO HEADER ==================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .cabecalho {
+        height: 110px;
+    }
+    
+    .container-cabecalho {
+        padding: 0 18px;
+    }
+    
+    .espacador-esquerdo {
+        width: 20px;
+        height: 14px;
+    }
+    
+    .logo-titulo {
+        height: 90px;
+        width: 350px;
+    }
+}
+
+/* Tablets pequenos e celulares grandes (481px - 768px) */
+@media (max-width: 768px) {
+    .cabecalho {
+        height: 100px;
+    }
+    
+    .container-cabecalho {
+        padding: 0 15px;
+    }
+    
+    .espacador-esquerdo {
+        width: 18px;
+        height: 12px;
+    }
+    
+    .logo-titulo {
+        height: 80px;
+        width: 280px;
+    }
+}
+
+/* Celulares (320px - 480px) */
+@media (max-width: 480px) {
+    .cabecalho {
+        height: 90px;
+    }
+    
+    .container-cabecalho {
+        padding: 0 10px;
+    }
+    
+    .espacador-esquerdo {
+        width: 16px;
+        height: 10px;
+    }
+    
+    .logo-titulo {
+        height: 70px;
+        width: 180px;
+        max-width: calc(100% - 60px);
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media (max-width: 320px) {
+    .cabecalho {
+        height: 80px;
+    }
+    
+    .container-cabecalho {
+        padding: 0 8px;
+    }
+    
+    .espacador-esquerdo {
+        width: 14px;
+        height: 9px;
+    }
+    
+    .logo-titulo {
+        height: 60px;
+        width: 140px;
+        max-width: calc(100% - 50px);
+    }
+}
+
+/* ==================== FUTURAS ADAPTAÇÕES ==================== */
+/* 
+Para adicionar novos headers específicos, siga o padrão:
+
+.header-[nome-da-pagina] {
+    // estilos específicos
+}
+
+.header-[nome-da-pagina] .logo-titulo {
+    // logo específico
+}
+
+.logo-titulo.[nome-da-pagina] {
+    // alternativa para logo específico
+}
+*/
