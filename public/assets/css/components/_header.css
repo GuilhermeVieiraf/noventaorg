@@ -40,7 +40,7 @@
     height: 100px !important;
     width: 400px !important;
     max-width: calc(100% - 80px);
-    background: url('/frontend/assets/imagens/9! png.png') center center;
+    background: url('/public/assets/imagens/9! png.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -62,7 +62,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('/frontend/assets/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background: url('/public/assets/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
     background-size: 60%;
     opacity: 0.07;
     z-index: 0;
@@ -75,7 +75,7 @@
 }
 
 .header-home .logo-titulo {
-    background-image: url('/frontend/assets/imagens/noventãoSemFundo.png');
+    background-image: url('/public/assets/imagens/noventãoSemFundo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
