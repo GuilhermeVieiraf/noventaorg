@@ -181,7 +181,7 @@ footer.container {
 /* Estilo especial para o evento Premiere com background */
 .evento[href="premiere.html"] {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url('/frontend/assets/imagens/gallery/pizza96.gif');
+                url('/public/assets/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ footer.container {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                url('/frontend/assets/imagens/gallery/pizza96.gif');
+                url('/public/assets/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
