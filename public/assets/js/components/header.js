@@ -36,7 +36,6 @@ class HeaderComponent {
                     <ul>
                         <li><a href="index.html">Início</a></li>
                         <li><a href="gallery.html">Galeria</a></li>
-                        <li><a href="about.html">Sobre</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
