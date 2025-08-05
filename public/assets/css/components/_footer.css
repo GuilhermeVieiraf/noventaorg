@@ -1,62 +1,54 @@
-/* Configuração para o body usar flexbox */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Container principal para empurrar o footer para baixo */
 .container {
   flex: 1 0 auto;
 }
 
-/* Container específico para o footer - remove o flex para não expandir */
-.container.rodape {
-  flex: none;
+.site-footer-simple {
+  background-color: var(--vermelho-noventa);
+  color: #ffffff;
+  padding: 0.3rem 0;
   margin-top: auto;
-}
-
-.rodape {
-  background: var(--cor-secundaria);
-  color: var(--vermelho-noventa);
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 1rem;
   flex-shrink: 0;
+}
+
+.footer-content-simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin-top: auto;
 }
 
-/* ==================== RESPONSIVIDADE DO FOOTER ==================== */
-
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-  .rodape {
-    padding: 1.3rem 0;
-    font-size: 0.95rem;
-  }
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
 }
 
-/* Tablets pequenos e celulares grandes (481px - 768px) */
-@media (max-width: 768px) {
-  .rodape {
-    padding: 1.1rem 0;
-    font-size: 0.9rem;
-  }
+.footer-center {
+  text-align: center;
 }
 
-/* Celulares (320px - 480px) */
-@media (max-width: 480px) {
-  .rodape {
-    padding: 1rem 0;
-    font-size: 0.85rem;
-  }
+.footer-right {
+  text-align: right;
 }
 
-/* Celulares muito pequenos (até 320px) */
-@media (max-width: 320px) {
-  .rodape {
-    padding: 0.8rem 0;
-    font-size: 0.8rem;
-  }
+.footer-center p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-right a {
+  color: #ffffff;
+  margin-left: 15px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.footer-right a:hover {
+  transform: scale(1.1);
 }
