@@ -10,7 +10,7 @@
     position: relative;
     z-index: 1;
     padding: 2rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 0 2px 12px rgba(153,0,0,0.07);
     overflow: hidden;
 }
