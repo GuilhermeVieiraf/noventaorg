@@ -7,9 +7,11 @@
 @import url('components/_buttons.css');
 @import url('components/_fotoshome.css');
 @import url('components/_sidebar.css');
+@import url('components/_modal.css');
 
 /* Adicione esta linha se ela não estiver presente */
 @import url('pages/_contato.css');
+@import url(pages/_premiere.css);
 
 
 /* ==================== CONTAINER ==================== */

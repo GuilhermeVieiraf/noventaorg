@@ -1,0 +1,162 @@
+/* ==================== PÁGINA PREMIERE ==================== */
+.premiere-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.premiere-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--vermelho-noventa);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.premiere-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.data-premiere {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    opacity: 0.9;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.descricao-premiere {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.fotos-premiere {
+    margin-bottom: 3rem;
+}
+
+.fotos-premiere h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 2rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fotos-grid .bloco-foto {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.fotos-grid .bloco-foto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fotos-grid .bloco-foto img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fotos-grid .bloco-foto:hover img {
+    transform: scale(1.05);
+}
+
+.premiere-detalhes {
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 15px;
+    border-left: 5px solid var(--vermelho-noventa);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.premiere-detalhes h3 {
+    font-size: 1.8rem;
+    color: var(--vermelho-noventa);
+    margin-bottom: 1rem;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+.premiere-detalhes p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+}
+
+
+/* ==================== RESPONSIVIDADE (Página Premiere) ==================== */
+@media (max-width: 1024px) {
+    .premiere-info h2 {
+        font-size: 2rem;
+    }
+    .data-premiere, .descricao-premiere {
+        font-size: 1.1rem;
+    }
+    .fotos-grid {
+        gap: 1.2rem;
+    }
+    .fotos-grid .bloco-foto img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .premiere-info {
+        padding: 1.5rem;
+    }
+    .premiere-info h2 {
+        font-size: 1.8rem;
+    }
+    .fotos-premiere h3 {
+        font-size: 1.6rem;
+    }
+    .premiere-detalhes h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .premiere-info {
+        padding: 1rem;
+    }
+    .premiere-info h2 {
+        font-size: 1.5rem;
+    }
+    .data-premiere, .descricao-premiere {
+        font-size: 0.9rem;
+    }
+    .fotos-premiere h3 {
+        font-size: 1.3rem;
+    }
+    .fotos-grid {
+        grid-template-columns: 1fr;
+    }
+    .premiere-detalhes h3 {
+        font-size: 1.2rem;
+    }
+    .premiere-detalhes p {
+        font-size: 0.9rem;
+    }
+}
