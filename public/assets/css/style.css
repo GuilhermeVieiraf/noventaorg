@@ -9,13 +9,17 @@
 @import url('components/_sidebar.css');
 @import url('components/_modal.css');
 
-/* Adicione esta linha se ela não estiver presente */
-@import url('pages/_contato.css');
-@import url('pages/_galeria.css');
-@import url('pages/_premiere.css');
+@import url('pages/_home.css'); 
+@import url('pages/_contato.css'); 
+@import url('pages/_galeria.css'); 
+@import url('pages/_premiere.css'); 
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-/* ==================== CONTAINER ==================== */
 .container {
     width: 95%;
     max-width: 1400px;
@@ -24,148 +28,37 @@
     flex: 1 0 auto;
 }
 
-/* Primeiro container de cada página - compensa o header */
 body > .container:first-of-type {
     margin-top: 20px;
 }
 
-/* Sobrescreve o flex do container quando usado no footer */
-footer.container {
-    flex: none;
-    margin-top: auto;
-    width: 100%;
-    max-width: none;
-    padding: 0;
-}
 
-/* ==================== HERO (VÍDEO) ==================== */
-#hero {
-    width: 100%;
-    height: 60vh;
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.video-noventa {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.video-noventa iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-/* ==================== RESPONSIVIDADE GERAL ==================== */
-
-/* Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
     .container {
         width: 90%;
         padding: 0.8rem 0;
     }
-    
     body > .container:first-of-type {
         margin-top: 30px;
     }
-    
-    .container h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.1rem;
-    }
-    
-    #hero {
-        height: 50vh;
-        margin-top: 70px;
-    }
-    
-    .video-noventa {
-        max-width: 700px;
-        height: 350px;
-    }
 }
 
-/* Tablets pequenos e celulares grandes (481px - 768px) */
 @media (max-width: 768px) {
     .container {
         width: 95%;
         padding: 0.5rem 0;
     }
-    
     body > .container:first-of-type {
         margin-top: 30px;
     }
-    
-    .container h1 {
-        font-size: 2rem;
-        margin-bottom: 0.1rem;
-    }
-        
-    #hero {
-        height: 35vh;
-        min-height: 220px;
-        margin-top: 60px;
-    }
-    
-    .video-noventa {
-        max-width: 100vw;
-        height: 200px;
-    }
-
 }
 
-/* Celulares (320px - 480px) */
 @media (max-width: 480px) {
     .container {
         width: 98%;
         padding: 0.5rem 0;
     }
-    
     body > .container:first-of-type {
         margin-top: 20px;
-    }
-    
-    .container h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.1rem;
-    }
-    
-    #hero {
-        height: 28vh;
-        min-height: 140px;
-        margin-top: 40px;
-    }
-    
-    .video-noventa {
-        max-width: 100vw;
-        height: 200px;
-    }
-}
-
-/* Celulares muito pequenos (até 320px) */
-@media (max-width: 320px) {
-    .container h1 {
-        font-size: 1.5rem;
-    }
-    
-    #hero {
-        height: 30vh;
-    }
-    
-    .video-noventa {
-        height: 180px;
     }
 }
