@@ -1,3 +1,5 @@
+/* ==================== PÁGINA DE CONTATO ==================== */
+
 main.container {
     margin-top: 120px !important; 
 }
@@ -51,6 +53,7 @@ section.container h1 {
     font-size: 1.1rem;
 }
 
+/* Estilos em comum para inputs e textareas */
 .form-contato input,
 .form-contato textarea {
     width: 100%;
@@ -63,6 +66,12 @@ section.container h1 {
     color: #111;
     font-size: 1.15rem;
 }
+
+/* ADICIONADO: Estilo específico para a caixa de mensagem */
+.form-contato textarea {
+    resize: none; /* <-- ESTA É A CORREÇÃO */
+}
+
 
 .form-contato button[type="submit"] {
     background: #fff;
@@ -82,6 +91,8 @@ section.container h1 {
     color: #fff;
     border: 1px solid #fff;
 }
+
+/* ==================== RESPONSIVIDADE (Página de Contato) ==================== */
 
 @media (max-width: 768px) {
     .form-contato {
