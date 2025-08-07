@@ -41,19 +41,32 @@ main.container {
 .footer-center,
 .footer-right {
   flex: 1;
-  padding: 0 10px; 
+  padding: 0 15px; /* Deixamos um padding pequeno para não colar nas bordas */
 }
 
+/* ================== A MÁGICA ESTÁ AQUI ================== */
+
+/* 1. A coluna do copyright vem primeiro */
 .footer-center {
-  text-align: center;
+  order: 1;
+  text-align: left; /* Alinhamos o texto dela à esquerda */
 }
 
+/* 2. A coluna vazia da esquerda agora fica no meio */
+.footer-left {
+  order: 2;
+}
+
+/* 3. A coluna da direita (social) continua em último lugar */
 .footer-right {
+  order: 3;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
 }
+
+/* ======================================================= */
 
 .footer-center p {
   margin: 0;
@@ -63,6 +76,7 @@ main.container {
 
 .footer-right a {
   color: #ffffff;
+  text-decoration: none; /* Garante que não tem sublinhado */
   display: inline-block;
   transition: transform 0.2s ease;
   white-space: nowrap;
@@ -73,16 +87,33 @@ main.container {
   transform: scale(1.05);
 }
 
+
+/* ==================== RESPONSIVIDADE DO FOOTER ==================== */
+
 @media (max-width: 768px) {
-  .footer-center p {
-    font-size: 0.9rem; 
+  /* Em telas menores, voltamos ao layout de 3 itens espaçados */
+  /* que discutimos antes, pois o espaço vazio no meio não faz sentido */
+  .footer-content-simple {
+    justify-content: space-between;
+  }
+  
+  .footer-center {
+    order: 1; /* Copyright fica na esquerda */
+    text-align: left;
+    flex-grow: 1; /* Ocupa mais espaço */
   }
 
-  .footer-right a {
-    font-size: 0.8rem;
-    gap: 10px;
+  .footer-right {
+    order: 2; /* Links vem logo depois */
+    justify-content: flex-end;
+  }
+
+  .footer-left {
+    display: none; /* Escondemos a coluna vazia */
   }
 }
+
+/* ==================== AJUSTES PARA CELULAR ==================== */
 
 @media (max-width: 480px) {
     .footer-content-simple {
@@ -97,16 +128,22 @@ main.container {
         padding: 0 5px !important;
     }
 
-    .footer-center p {
-        font-size: 0.75rem !important;
+    /* A MUDANÇA ESTÁ AQUI: 
+      Unimos as duas regras para garantir o mesmo tamanho de fonte.
+    */
+    .footer-center p,
+    .footer-right a {
+        font-size: 0.8rem !important; /* Tamanho pequeno e igual para ambos */
     }
 
     .footer-right {
-        gap: 8px !important;
+        gap: 10px !important;
         justify-content: flex-end !important;
     }
-    
-    .footer-right a {
-        font-size: 0.7rem !important;
+
+    /* Opcional: ajustar o tamanho dos ícones também */
+    .footer-right svg {
+        width: 20px;
+        height: 20px;
     }
 }

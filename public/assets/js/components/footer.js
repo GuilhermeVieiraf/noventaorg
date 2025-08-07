@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <span>&copy; noventa org.</span>
             </div>
 
+             <div class="footer-center"></div>
+
             <div class="footer-right">
                 <a href="https://instagram.com/noventaorg" target="_blank" aria-label="Instagram">
                     <span>instagram.com/noventaorg</span>
