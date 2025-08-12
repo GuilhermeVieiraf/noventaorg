@@ -1,3 +1,5 @@
+/* ==================== FOOTER CSS FINAL E DEFINITIVO ==================== */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -11,7 +13,7 @@ main.container {
 .site-footer-simple {
   background-color: var(--vermelho-noventa);
   color: #ffffff;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   margin-top: auto;
   flex-shrink: 0;
   position: relative;
@@ -30,120 +32,44 @@ main.container {
 
 .footer-content-simple {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* No PC: empurra copyright p/ esquerda e social p/ direita */
   align-items: center;
   width: 100%;
   position: relative;
   z-index: 1;
+  padding: 0 20px;
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
-  flex: 1;
-  padding: 0 15px; /* Deixamos um padding pequeno para não colar nas bordas */
-}
-
-/* ================== A MÁGICA ESTÁ AQUI ================== */
-
-/* 1. A coluna do copyright vem primeiro */
-.footer-center {
-  order: 1;
-  text-align: left; /* Alinhamos o texto dela à esquerda */
-}
-
-/* 2. A coluna vazia da esquerda agora fica no meio */
-.footer-left {
-  order: 2;
-}
-
-/* 3. A coluna da direita (social) continua em último lugar */
-.footer-right {
-  order: 3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 15px;
-}
-
-/* ======================================================= */
-
-.footer-center p {
+.footer-copyright p {
   margin: 0;
-  font-size: 1rem;
-  white-space: nowrap; 
-}
-
-.footer-right a {
-  color: #ffffff;
-  text-decoration: none; /* Garante que não tem sublinhado */
-  display: inline-block;
-  transition: transform 0.2s ease;
-  white-space: nowrap;
   font-size: 0.9rem;
 }
 
-.footer-right a:hover {
-  transform: scale(1.05);
+.footer-social {
+  display: flex;
+  gap: 20px; /* Espaço entre os links */
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.8;
 }
 
 
-/* ==================== RESPONSIVIDADE DO FOOTER ==================== */
-
+/* --- LAYOUT PARA CELULAR (Copyright em cima, links embaixo) --- */
 @media (max-width: 768px) {
-  /* Em telas menores, voltamos ao layout de 3 itens espaçados */
-  /* que discutimos antes, pois o espaço vazio no meio não faz sentido */
+  .site-footer-simple {
+      padding: 1rem 0;
+  }
+
   .footer-content-simple {
-    justify-content: space-between;
+    flex-direction: column; /* Empilha os itens */
+    gap: 12px;              /* Espaço entre a linha do copyright e a dos links */
   }
-  
-  .footer-center {
-    order: 1; /* Copyright fica na esquerda */
-    text-align: left;
-    flex-grow: 1; /* Ocupa mais espaço */
-  }
-
-  .footer-right {
-    order: 2; /* Links vem logo depois */
-    justify-content: flex-end;
-  }
-
-  .footer-left {
-    display: none; /* Escondemos a coluna vazia */
-  }
-}
-
-/* ==================== AJUSTES PARA CELULAR ==================== */
-
-@media (max-width: 480px) {
-    .footer-content-simple {
-        flex-direction: row !important; 
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        flex-basis: 33.33% !important;
-        width: 33.33% !important;
-        padding: 0 5px !important;
-    }
-
-    /* A MUDANÇA ESTÁ AQUI: 
-      Unimos as duas regras para garantir o mesmo tamanho de fonte.
-    */
-    .footer-center p,
-    .footer-right a {
-        font-size: 0.8rem !important; /* Tamanho pequeno e igual para ambos */
-    }
-
-    .footer-right {
-        gap: 10px !important;
-        justify-content: flex-end !important;
-    }
-
-    /* Opcional: ajustar o tamanho dos ícones também */
-    .footer-right svg {
-        width: 20px;
-        height: 20px;
-    }
 }
