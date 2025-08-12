@@ -63,23 +63,29 @@ body > .container:first-of-type {
     }
 }
 
-/* ==========================================================================
-   NOVA SEÇÃO: NOTÍCIA DESTAQUE
-   ========================================================================== */
+/* ==================== NOVA SEÇÃO: NOTÍCIA DESTAQUE ==================== */
 
+/* A 'section' externa agora controla o fundo de ponta a ponta */
 #noticia-destaque {
+    padding: 3rem 0;     
+    margin-bottom: 3rem;
+}
+
+/* O container interno alinha o conteúdo com o resto do site */
+.noticia-container-interno {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    border-left: 5px solid var(--vermelho-noventa);
+    padding: 0; /* Resetamos o padding para não duplicar */
 }
 
 .noticia-imagem {
-    flex: 1 1 40%;
+    width: 200px;  /* <-- Defina o tamanho exato que você quer aqui */
+    height: 200px; /* <-- O mesmo valor para garantir que seja um quadrado */
+    flex-shrink: 0; /* Impede que a imagem encolha em telas apertadas */
     overflow: hidden;
-    align-self: stretch; 
+    align-self: center;
+    
 }
 
 .noticia-imagem img {
@@ -132,54 +138,4 @@ body > .container:first-of-type {
 
 .noticia-cta:hover {
     transform: translateX(5px);
-}
-
-/* ==========================================================================
-   FIM DA SEÇÃO DE NOTÍCIA
-   ========================================================================== */
-
-
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-        padding: 0.8rem 0;
-    }
-    body > .container:first-of-type {
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 0.5rem 0;
-    }
-    body > .container:first-of-type {
-        margin-top: 30px;
-    }
-
-    /* Responsividade da Notícia */
-    #noticia-destaque {
-        flex-direction: column;
-        padding: 1.5rem;
-        text-align: center;
-        border-left: none;
-        border-top: 5px solid var(--vermelho-noventa);
-    }
-    .noticia-titulo {
-        font-size: 1.5rem;
-    }
-    .noticia-cta {
-        align-self: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 98%;
-        padding: 0.5rem 0;
-    }
-    body > .container:first-of-type {
-        margin-top: 20px;
-    }
 }
