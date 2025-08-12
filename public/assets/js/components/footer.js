@@ -4,15 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     <footer class="site-footer-simple">
         <div class="container footer-content-simple">
             
-            <div class="footer-left"></div>
-
-            <div class="footer-center">
-                <span>&copy; noventa org.</span>
+            <div class="footer-copyright">
+                <p>&copy; noventa.org</p>
             </div>
 
-             <div class="footer-center"></div>
-
-            <div class="footer-right">
+            <div class="footer-social">
                 <a href="https://instagram.com/noventaorg" target="_blank" aria-label="Instagram">
                     <span>instagram.com/noventaorg</span>
                 </a>
