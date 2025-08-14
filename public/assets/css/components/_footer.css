@@ -1,5 +1,3 @@
-/* ==================== FOOTER CSS FINAL E DEFINITIVO ==================== */
-
 body {
   min-height: 100vh;
   display: flex;
@@ -32,7 +30,7 @@ main.container {
 
 .footer-content-simple {
   display: flex;
-  justify-content: space-between; /* No PC: empurra copyright p/ esquerda e social p/ direita */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   position: relative;
@@ -43,17 +41,19 @@ main.container {
 .footer-copyright p {
   margin: 0;
   font-size: 0.9rem;
+  font-family: 'TTInterphasesProDemiBold', sans-serif;
 }
 
 .footer-social {
   display: flex;
-  gap: 20px; /* Espaço entre os links */
+  gap: 20px; 
 }
 
 .footer-social a {
   color: #ffffff;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; 
   font-size: 0.9rem;
+  font-family: 'TTInterphasesProDemiBold', sans-serif;
   transition: opacity 0.2s ease;
 }
 
@@ -62,14 +62,19 @@ main.container {
 }
 
 
-/* --- LAYOUT PARA CELULAR (Copyright em cima, links embaixo) --- */
 @media (max-width: 768px) {
   .site-footer-simple {
-      padding: 1rem 0;
+      padding: 0.7rem 0;
   }
 
   .footer-content-simple {
-    flex-direction: column; /* Empilha os itens */
-    gap: 12px;              /* Espaço entre a linha do copyright e a dos links */
+    flex-direction: column; 
+    gap: 12px;           
+    padding: 0 15px;   
+  }
+
+  .footer-copyright,
+  .footer-social a {
+    font-size: 0.8rem;
   }
 }
