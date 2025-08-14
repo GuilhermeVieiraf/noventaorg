@@ -87,7 +87,7 @@
 }
 
 .evento[href="premiere.html"] {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/public/assets/imagens/gallery/pizza96.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
     color: white;

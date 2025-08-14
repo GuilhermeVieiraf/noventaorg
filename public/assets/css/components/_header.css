@@ -40,7 +40,7 @@
     height: 100px !important;
     width: 400px !important;
     max-width: calc(100% - 80px);
-    background: url('/public/assets/imagens/9! png.png') center center;
+    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/9! png.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -62,7 +62,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('/public/assets/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
     background-size: 60%;
     opacity: 0.03;
     z-index: 0;
@@ -75,7 +75,7 @@
 }
 
 .header-home .logo-titulo {
-    background-image: url('/public/assets/imagens/noventãoSemFundo.png');
+    background-image: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/noventãoSemFundo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -169,19 +169,3 @@
     }
 }
 
-/* ==================== FUTURAS ADAPTAÇÕES ==================== */
-/* 
-Para adicionar novos headers específicos, siga o padrão:
-
-.header-[nome-da-pagina] {
-    // estilos específicos
-}
-
-.header-[nome-da-pagina] .logo-titulo {
-    // logo específico
-}
-
-.logo-titulo.[nome-da-pagina] {
-    // alternativa para logo específico
-}
-*/
