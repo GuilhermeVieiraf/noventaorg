@@ -105,7 +105,7 @@
 }
 
 .evento[href="premiere.html"]:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/public/assets/imagens/gallery/pizza96.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/pizza96.gif');
     background-size: cover;
     background-position: center;
 }
