@@ -1,4 +1,5 @@
 #noticia-destaque {
+    background-color: var(--vermelho-noventa);
     padding: 3rem 0;
     margin-bottom: 3rem;
     margin-top: 5rem; 
@@ -11,7 +12,7 @@
     font-size: 1.5rem;
     line-height: 1.3;
     margin-bottom: 1rem;
-    color: var(--vermelho-noventa);
+    color: #ffffff;
 }
 
 .noticia-container-interno {
@@ -44,7 +45,7 @@
 
 .noticia-resumo {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
@@ -53,7 +54,7 @@
 
 .noticia-cta {
     font-weight: bold;
-    color: var(--vermelho-noventa);
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
