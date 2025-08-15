@@ -1,18 +1,18 @@
 @font-face {
-    font-family: 'FonteNoventaPrincipal';
-    src: url('/assets/fontes/Akira Expanded Demo.otf') format('truetype');
+    font-family: 'fonte-noventa-principal';
+    src: url('/assets/fontes/akira-expanded-demo.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'TTInterphasesProDemiBold';
-    src: url('/assets/fontes/TT Interphases Pro Trial ExtraBold.ttf') format('truetype');
+    font-family: 'tt-interphases-pro-demi-bold';
+    src: url('/assets/fontes/tt-interphases-pro-trial-extrabold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'TTInterphasesProMediumItalic';
-    src: url('/assets/fontes/TT Interphases Pro Trial Medium Italic.ttf') format('truetype');
+    font-family: 'tt-interphases-pro-medium-italic';
+    src: url('/assets/fontes/tt-interphases-pro-trial-medium-italic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
