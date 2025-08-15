@@ -1,6 +1,6 @@
 @import url('base/_reset.css');
-@import url('base/_variables.css');
 @import url('base/_typography.css');
+@import url('base/_variables.css');
 
 @import url('components/_header.css');
 @import url('components/_footer.css');
