@@ -49,7 +49,7 @@
     line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    font-family: var(--font-texto-italic);
+    font-family: var(--fonte-texto-italic);
 }
 
 .noticia-cta {
