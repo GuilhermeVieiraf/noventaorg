@@ -4,9 +4,9 @@
   --cor-secundaria: #fdfcf6;
   --cor-destaque: #e63946; 
   --vermelho-noventa: #c70223;
-  --fonte-noventa: 'tt-interphases-pro-demi-bold', Arial, sans-serif;
+  --fonte-noventa: 'demi-bold', Arial, sans-serif;
   --fonte-titulo: 'fonte-noventa-principal', Arial, sans-serif;
-  --fonte-texto-italic: 'tt-interphases-pro-medium-italic', sans-serif; 
+  --fonte-texto-italic: 'medium-italic', sans-serif; 
   
   /* Variáveis para menu hambúrguer */
   --ponto-transform-left: translateX(-8px) scale(0.8);
