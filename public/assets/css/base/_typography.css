@@ -4,14 +4,14 @@
 }
 
 @font-face {
-    font-family: 'tt-interphases-pro-demi-bold';
+    font-family: 'demi-bold';
     src: url('/assets/fontes/tt-interphases-pro-trial-extrabold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'tt-interphases-pro-medium-italic';
+    font-family: 'medium-italic';
     src: url('/assets/fontes/tt-interphases-pro-trial-medium-italic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
