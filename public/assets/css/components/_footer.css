@@ -41,7 +41,7 @@ main.container {
 .footer-copyright p {
   margin: 0;
   font-size: 0.9rem;
-  font-family: var(--fonte-noventa);
+  font-family: var(--fonte-demi-bold);
 }
 
 .footer-social {
