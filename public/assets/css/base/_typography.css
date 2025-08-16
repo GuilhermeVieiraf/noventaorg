@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'fonte-noventa-principal';
-    src: url('/public/assets/fontes/akira.otf') format('opentype');
+    src: url('/assets/fontes/akira.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'demi-bold';
-    src: url('/public/assets/fontes/extrabold.ttf') format('truetype');
+    src: url('/assets/fontes/extrabold.ttf') format('truetype'); /* teste fonte*/
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'medium-italic';
-    src: url('/public/assets/fontes/medium-italic.ttf') format('truetype');
+    src: url('/assets/fontes/medium-italic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
