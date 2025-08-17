@@ -9,6 +9,7 @@
 @import url('components/_sidebar.css');
 @import url('components/_modal.css');
 @import url('components/_noticia-principal-home.css');
+@import url('components/_preloader.css');
 
 @import url('pages/_home.css'); 
 @import url('pages/_contato.css'); 
