@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Contato | noventaorg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/fivecon.png">
-    <link rel="apple-touch-icon" href="assets/fivecon.png">
+    <link rel="icon" type="image/png" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
+    <link rel="apple-touch-icon" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <script src="assets/js/components/header.js"></script>
 </head>
+
 <body>
-    <!-- O header será inserido automaticamente aqui pelo JavaScript -->
     <section class="container" style="min-height: 60vh;">
         <h1>Contato</h1>
-        <form class="form-contato" action="https://formsubmit.co/0c76be692f4ac96eb81fc5b12940155d" method="POST" id="form-contato">
+        <form class="form-contato" action="https://formsubmit.co/0c76be692f4ac96eb81fc5b12940155d" method="POST"
+            id="form-contato">
             <div>
                 <label for="nome">Nome</label><br>
                 <input type="text" id="nome" name="nome" required>
@@ -36,33 +38,34 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    
-   <div id="footer-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
 
     <script src="assets/js/components/footer.js"></script>
 
     <script>
-    document.getElementById('form-contato').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-        fetch(form.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                alert('Mensagem enviada com sucesso!');
-                form.reset();
-            } else {
+        document.getElementById('form-contato').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Mensagem enviada com sucesso!');
+                    form.reset();
+                } else {
+                    alert('Ocorreu um erro ao enviar. Tente novamente.');
+                }
+            }).catch(() => {
                 alert('Ocorreu um erro ao enviar. Tente novamente.');
-            }
-        }).catch(() => {
-            alert('Ocorreu um erro ao enviar. Tente novamente.');
+            });
         });
-    });
     </script>
 </body>
+
 </html>
