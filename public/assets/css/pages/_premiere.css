@@ -64,21 +64,12 @@
     cursor: pointer;
 }
 
-.fotos-grid .bloco-foto:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 .fotos-grid .bloco-foto img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.fotos-grid .bloco-foto:hover img {
-    transform: scale(1.05);
 }
 
 .premiere-detalhes {
@@ -108,12 +99,16 @@
     .premiere-info h2 {
         font-size: 2rem;
     }
-    .data-premiere, .descricao-premiere {
+
+    .data-premiere,
+    .descricao-premiere {
         font-size: 1.1rem;
     }
+
     .fotos-grid {
         gap: 1.2rem;
     }
+
     .fotos-grid .bloco-foto img {
         height: 200px;
     }
@@ -124,31 +119,40 @@
         padding: 1.5rem;
         margin-bottom: 2rem;
     }
+
     .premiere-info h2 {
         font-size: 1.8rem;
     }
+
     .data-premiere {
         font-size: 1rem;
     }
+
     .descricao-premiere {
         font-size: 1rem;
         line-height: 1.6;
     }
+
     .fotos-premiere h3 {
         font-size: 1.6rem;
     }
+
     .fotos-grid {
         gap: 1rem;
     }
+
     .fotos-grid .bloco-foto img {
         height: 180px;
     }
+
     .premiere-detalhes {
         padding: 1.5rem;
     }
+
     .premiere-detalhes h3 {
         font-size: 1.5rem;
     }
+
     .premiere-detalhes p {
         font-size: 1rem;
     }
@@ -159,31 +163,40 @@
         padding: 1rem;
         margin-bottom: 1.5rem;
     }
+
     .premiere-info h2 {
         font-size: 1.5rem;
     }
-    .data-premiere, .descricao-premiere {
+
+    .data-premiere,
+    .descricao-premiere {
         font-size: 0.9rem;
         line-height: 1.5;
     }
+
     .fotos-premiere h3 {
         font-size: 1.3rem;
     }
+
     .fotos-grid {
         grid-template-columns: 1fr;
         gap: 0.8rem;
     }
+
     .fotos-grid .bloco-foto img {
         width: 100%;
         height: auto;
         object-fit: contain;
     }
+
     .premiere-detalhes {
         padding: 1rem;
     }
+
     .premiere-detalhes h3 {
         font-size: 1.2rem;
     }
+
     .premiere-detalhes p {
         font-size: 0.9rem;
     }
