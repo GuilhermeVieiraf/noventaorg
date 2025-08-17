@@ -80,6 +80,7 @@ section.container h1 {
     transition: background 0.2s, color 0.2s;
     margin-top: 0.5rem;
     font-weight: bold;
+    font-family: var(--fonte-demi-bold);
 }
 
 .form-contato button[type="submit"]:hover {
