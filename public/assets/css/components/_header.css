@@ -1,19 +1,16 @@
-/* ==================== CABEÇALHO (HEADER) ==================== */
-
-/* ==================== HEADER PADRÃO ==================== */
 .cabecalho {
     background: var(--vermelho-noventa);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 100%; /* Garante que não ultrapasse a viewport */
+    max-width: 100%; 
     top: 0;
     left: 0;
     z-index: 10;
     height: 120px !important;
     min-height: 120px !important;
     max-height: 120px !important;
-    overflow-x: hidden; /* Evita scroll horizontal */
+    overflow-x: hidden; 
 }
 
 .container-cabecalho {
@@ -23,18 +20,17 @@
     height: 100%;
     padding: 0 20px;
     position: relative;
-    max-width: 100%; /* Garante que não ultrapasse a tela */
-    overflow: hidden; /* Evita vazamento de conteúdo */
+    max-width: 100%; 
+    overflow: hidden; 
 }
 
-/* Espacador invisível para equilibrar o layout */
 .espacador-esquerdo {
-    width: 20px; /* Mesma largura do menu hambúrguer */
-    height: 14px; /* Mesma altura do menu hambúrguer */
-    flex-shrink: 0; /* Não encolhe */
+    width: 20px; 
+    height: 14px; 
+    flex-shrink: 0; 
 }
 
-/* ==================== LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME) ==================== */
+/*LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME)*/
 .logo-titulo {
     display: inline-block;
     height: 100px !important;
@@ -52,7 +48,7 @@
     transform: scale(1.05);
 }
 
-/* ==================== HEADER ESPECÍFICO - HOME ==================== */
+/*HEADER ESPECÍFICO - HOME*/
 .header-home {
     position: relative;
     background: var(--vermelho-noventa);
@@ -81,9 +77,6 @@
     background-position: center;
 }
 
-/* ==================== RESPONSIVIDADE DO HEADER ==================== */
-
-/* Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
     .cabecalho {
         height: 110px;
@@ -104,7 +97,6 @@
     }
 }
 
-/* Tablets pequenos e celulares grandes (481px - 768px) */
 @media (max-width: 768px) {
     .cabecalho {
         height: 100px;
@@ -125,7 +117,6 @@
     }
 }
 
-/* Celulares (320px - 480px) */
 @media (max-width: 480px) {
     .cabecalho {
         height: 90px;
@@ -147,7 +138,6 @@
     }
 }
 
-/* Celulares muito pequenos (até 320px) */
 @media (max-width: 320px) {
     .cabecalho {
         height: 80px;
@@ -168,4 +158,3 @@
         max-width: calc(100% - 50px);
     }
 }
-
