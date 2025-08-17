@@ -1,14 +1,11 @@
 #preloader {
     position: fixed;
     inset: 0;
-
     background-color: var(--vermelho-noventa);
     z-index: 9999;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: opacity 0.75s ease, visibility 0.75s ease;
 }
 
@@ -17,7 +14,6 @@
     visibility: hidden;
 }
 
-
 .preloader-container {
     position: relative;
     display: flex;
@@ -25,33 +21,29 @@
     align-items: center;
 }
 
-
 .preloader-logo {
     width: 100px;
     height: auto;
+    animation: logo-animation 4s infinite;
 }
 
+/* Removemos a regra .spinner
+*/
 
-.spinner {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-
-
-    border: 4px solid transparent;
-    border-top-color: #ffffff;
-
-    border-radius: 50%;
-    animation: spin 1.2s cubic-bezier(0.6, 0.2, 0.4, 0.8) infinite;
-}
-
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+@keyframes logo-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
     }
-
-    to {
-        transform: rotate(360deg);
+    35% {
+        transform: rotate(360deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.2);
+    }
+    65% {
+        transform: rotate(360deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
     }
 }
