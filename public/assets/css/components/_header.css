@@ -3,14 +3,25 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     height: 120px !important;
     min-height: 120px !important;
     max-height: 120px !important;
-    overflow-x: hidden; 
+    overflow: hidden;
+}
+
+.cabecalho::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background-size: 60%;
+    opacity: 0.03;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .container-cabecalho {
@@ -20,17 +31,16 @@
     height: 100%;
     padding: 0 20px;
     position: relative;
-    max-width: 100%; 
-    overflow: hidden; 
+    z-index: 1;
 }
 
 .espacador-esquerdo {
-    width: 20px; 
-    height: 14px; 
-    flex-shrink: 0; 
+    width: 20px;
+    height: 14px;
+    flex-shrink: 0;
 }
 
-/*LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME)*/
+/* LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME) */
 .logo-titulo {
     display: inline-block;
     height: 100px !important;
@@ -48,7 +58,7 @@
     transform: scale(1.05);
 }
 
-/*HEADER ESPECÍFICO - HOME*/
+/* HEADER ESPECÍFICO - HOME */
 .header-home {
     position: relative;
     background: var(--vermelho-noventa);
@@ -65,7 +75,7 @@
     pointer-events: none;
 }
 
-.header-home > * {
+.header-home>* {
     position: relative;
     z-index: 1;
 }
@@ -79,82 +89,77 @@
 
 @media (max-width: 1024px) {
     .cabecalho {
-        height: 110px;
+        height: 110px !important;
     }
-    
+
     .container-cabecalho {
         padding: 0 18px;
     }
-    
-    .espacador-esquerdo {
-        width: 20px;
-        height: 14px;
-    }
-    
+
     .logo-titulo {
-        height: 90px;
-        width: 350px;
+        height: 90px !important;
+        width: 350px !important;
     }
 }
 
 @media (max-width: 768px) {
     .cabecalho {
-        height: 100px;
+        height: 100px !important;
     }
-    
+
     .container-cabecalho {
         padding: 0 15px;
     }
-    
+
     .espacador-esquerdo {
         width: 18px;
         height: 12px;
     }
-    
+
     .logo-titulo {
-        height: 80px;
-        width: 280px;
+        height: 80px !important;
+        width: 280px !important;
     }
 }
 
 @media (max-width: 480px) {
     .cabecalho {
-        height: 90px;
+        height: 90px !important;
     }
-    
+
     .container-cabecalho {
         padding: 0 10px;
     }
-    
+
     .espacador-esquerdo {
         width: 16px;
         height: 10px;
     }
-    
+
     .logo-titulo {
-        height: 70px;
-        width: 180px;
+        height: 70px !important;
+        width: 180px !important;
         max-width: calc(100% - 60px);
     }
 }
 
 @media (max-width: 320px) {
     .cabecalho {
-        height: 80px;
+        height: 80px !important;
     }
-    
+
     .container-cabecalho {
         padding: 0 8px;
     }
-    
+
     .espacador-esquerdo {
         width: 14px;
         height: 9px;
     }
-    
+
     .logo-titulo {
-        height: 60px;
-        width: 140px;
+        height: 60px !important;
+        width: 140px !important;
         max-width: calc(100% - 50px);
     }
 }
