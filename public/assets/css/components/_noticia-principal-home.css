@@ -1,11 +1,24 @@
 #noticia-destaque {
-    background-color: var(--vermelho-noventa);
+    background: var(--vermelho-noventa);
     padding: 3rem 2rem; 
     margin-bottom: 3rem;
     margin-top: 5rem;
+    position: relative;
+}
+
+#noticia-destaque::before {
+    content: "";
+    position: absolute; 
+    inset: 0;           
+    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+    background-size: 60%;
+    opacity: 0.03; 
+    z-index: 0; 
 }
 
 #noticia-destaque .container {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center; 
