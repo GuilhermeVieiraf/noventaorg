@@ -32,7 +32,7 @@ class HeaderComponent {
                 <nav class="menu-lateral">
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="gallery.html">Galeria</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="noticias.html">Notícias</a></li>
                     </ul>
