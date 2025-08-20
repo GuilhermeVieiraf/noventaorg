@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/galeria",
-      "destination": "/gallery.html"
+      "destination": "gallery.html"
     }
   ]
 }
