@@ -1,13 +1,6 @@
 #galeria-eventos {
     padding: 2rem 0;
-}
-
-#galeria-eventos h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: var(--vermelho-noventa);
-    margin-bottom: 3rem;
-    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    margin-top: 5rem;
 }
 
 .evento {
@@ -32,7 +25,7 @@
     font-size: 2.2rem;
     color: var(--vermelho-noventa);
     margin-bottom: 0.5rem;
-    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-demi-bold);
     transition: color 0.3s ease;
 }
 
@@ -45,14 +38,7 @@
     color: #666;
     margin-bottom: 1rem;
     font-style: italic;
-    font-family: 'TTInterphasesProDemiBold', Arial, Helvetica, sans-serif;
-}
-
-.descricao-evento {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    font-family: var(--fonte-texto-italic);
 }
 
 .fotos-evento {
