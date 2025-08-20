@@ -38,6 +38,11 @@ main.container {
   padding: 0 20px;
 }
 
+.footer-copyright a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .footer-copyright p {
   margin: 0;
   font-size: 0.9rem;
@@ -53,7 +58,7 @@ main.container {
   color: #ffffff;
   text-decoration: none; 
   font-size: 0.9rem;
-  font-family: var(--fonte-demi-bold); /* fonte nos links*/
+  font-family: var(--fonte-texto-italic);
   transition: opacity 0.2s ease;
 }
 
@@ -61,19 +66,23 @@ main.container {
   opacity: 0.8;
 }
 
+.footer-copyright a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   .site-footer-simple {
-      padding: 0.7rem 0;
+      padding: 1rem 0;
   }
 
   .footer-content-simple {
     flex-direction: column; 
     gap: 12px;           
-    padding: 0 15px;   
+    padding: 0 15px;      
   }
 
-  .footer-copyright,
+  .footer-copyright p,
   .footer-social a {
     font-size: 0.8rem;
   }
