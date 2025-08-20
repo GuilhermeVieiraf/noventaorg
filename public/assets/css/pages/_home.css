@@ -11,8 +11,8 @@
 .video-noventa {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    height: 400px;
+    max-width: 1000px;
+    height: 500px;
     margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
