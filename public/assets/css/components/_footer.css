@@ -8,29 +8,18 @@ main.container {
   flex: 1 0 auto;
 }
 
+
+
 .site-footer-simple {
-  background-color: var(--vermelho-noventa);
-  color: #ffffff;
   padding: 0.8rem 0;
   margin-top: auto;
   flex-shrink: 0;
   position: relative;
-  overflow: hidden;
-}
-
-.site-footer-simple::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
-    background-size: 60%;
-    opacity: 0.03;
-    z-index: 0;
 }
 
 .footer-content-simple {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   position: relative;
@@ -38,9 +27,12 @@ main.container {
   padding: 0 20px;
 }
 
-.footer-copyright a {
-    color: #ffffff;
-    text-decoration: none;
+
+.footer-copyright p,
+.footer-copyright a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-copyright p {
@@ -51,35 +43,55 @@ main.container {
 
 .footer-social {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .footer-social a {
-  color: #ffffff;
-  text-decoration: none; 
   font-size: 0.9rem;
   font-family: var(--fonte-texto-italic);
   transition: opacity 0.2s ease;
 }
 
-.footer-social a:hover {
-  opacity: 0.8;
-}
 
 .footer-copyright a:hover,
 .footer-social a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
+
+
+.pagina-home .site-footer-simple {
+  background-color: var(--vermelho-noventa);
+  overflow: hidden;
+}
+
+.pagina-home .site-footer-simple::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://pub-7ebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
+  background-size: 60%;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+
+.pagina-home .footer-social a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+
 
 @media (max-width: 768px) {
   .site-footer-simple {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
 
   .footer-content-simple {
-    flex-direction: column; 
-    gap: 12px;           
-    padding: 0 15px;      
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 15px;
   }
 
   .footer-copyright p,

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="container footer-content-simple">
             
             <div class="footer-copyright">
-                <p>&copy; <a href="/index.html">2025 noventaorg</a></p>
+                <p>&copy; <a href="/index.html">2025 Noventa Org.</a></p>
             </div>
 
             <div class="footer-social">
