@@ -1,28 +1,14 @@
 .cabecalho {
-    background: var(--vermelho-noventa);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     height: 120px !important;
-    min-height: 120px !important;
-    max-height: 120px !important;
-    overflow: hidden;
+
 }
 
-.cabecalho::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
-    background-size: 60%;
-    opacity: 0.03;
-    z-index: 0;
-    pointer-events: none;
-}
+
 
 .container-cabecalho {
     display: flex;
@@ -39,6 +25,7 @@
     height: 14px;
     flex-shrink: 0;
 }
+
 
 /* LOGO PADRÃO (TODAS AS PÁGINAS EXCETO HOME) */
 .logo-titulo {
@@ -136,7 +123,7 @@
         height: 10px;
     }
 
-    .logo-titulo {
+    .logo-titulo { 
         height: 70px !important;
         width: 180px !important;
         max-width: calc(100% - 60px);
@@ -154,7 +141,7 @@
 
     .espacador-esquerdo {
         width: 14px;
-        height: 9px;
+        height: 9px; 
     }
 
     .logo-titulo {
