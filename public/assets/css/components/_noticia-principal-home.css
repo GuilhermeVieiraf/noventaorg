@@ -1,6 +1,6 @@
 #noticia-destaque {
     background: var(--vermelho-noventa);
-    padding: 3rem 2rem; 
+    padding: 3rem 2rem;
     margin-bottom: 3rem;
     margin-top: 5rem;
     position: relative;
@@ -8,12 +8,12 @@
 
 #noticia-destaque::before {
     content: "";
-    position: absolute; 
-    inset: 0;           
+    position: absolute;
+    inset: 0;
     background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg') center center repeat;
     background-size: 60%;
-    opacity: 0.03; 
-    z-index: 0; 
+    opacity: 0.03;
+    z-index: 0;
 }
 
 #noticia-destaque .container {
@@ -21,7 +21,7 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .noticia-titulo-sessao {
@@ -35,31 +35,31 @@
 
 .noticia-container-interno {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    gap: 1.5rem;            
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     padding: 0;
 }
 
 .noticia-imagem {
-    width: 100%;
-    max-width: 450px; 
-    height: 400px; 
+    flex: 0 0 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 450 / 460;
     overflow: hidden;
-    border-radius: 8px;
 }
 
 .noticia-imagem img {
-    width: 100%; 
-    height: 100%; 
-    display: block; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .noticia-conteudo {
     max-width: 650px;
-    margin: 0 auto; 
-    text-align: center;  
+    margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 0 1.5rem;
@@ -84,7 +84,7 @@
 }
 
 .noticia-cta:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -95,7 +95,7 @@
     .noticia-titulo-sessao {
         font-size: 1.3rem;
     }
-    
+
     .noticia-resumo {
         font-size: 0.9rem;
     }
