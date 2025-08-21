@@ -34,7 +34,7 @@ section.container h1 {
     height: 100%;
     background: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivos.jpg') no-repeat center center;
     background-size: cover;
-    opacity: 0.05;
+    opacity: 0.03;
     pointer-events: none;
     z-index: 0;
 }
