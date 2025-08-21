@@ -25,6 +25,7 @@ body {
 
 body:not(.pagina-home)::before {
     content: '';
+    content: '';
     position: fixed; 
     inset: 0; 
     background-image: url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg');
