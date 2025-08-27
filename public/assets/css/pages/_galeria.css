@@ -41,44 +41,13 @@
     font-family: var(--fonte-texto-italic);
 }
 
-.fotos-evento {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.fotos-evento .bloco-foto {
-    margin-bottom: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.fotos-evento .bloco-foto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.fotos-evento .bloco-foto img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.fotos-evento .bloco-foto:hover img {
-    transform: scale(1.05);
-}
-
-.evento[href="premiere.html"] {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/pizza96.gif');
+.evento.evento-destaque {
+    background-color: #333; 
     background-size: cover;
     background-position: center;
     color: white;
     border-left: none;
-    border-radius: 0 !important;
+    border-radius: 0;
     min-height: 300px;
     max-width: 1000px;
     margin-left: auto;
@@ -90,36 +59,34 @@
     text-align: center;
 }
 
-.evento[href="premiere.html"]:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/pizza96.gif');
-    background-size: cover;
-    background-position: center;
+.evento.evento-destaque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.evento[href="premiere.html"] h2 {
+.evento.evento-destaque h2 {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 3rem;
 }
 
-.evento[href="premiere.html"] .data-evento {
+.evento.evento-destaque .data-evento {
     color: white;
     font-style: normal;
     letter-spacing: 2px;
     margin-top: 0.2rem;
 }
 
-.evento[href="premiere.html"] .descricao-evento {
-    color: #e0e0e0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+.evento[href="premiere.html"].evento-destaque {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/pizza96.gif');
+}
+
+.evento[href="estreia-noventa-magazine.html"].evento-destaque {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/revista-noticia.webp');
 }
 
 @media (max-width: 768px) {
-    #galeria-eventos h1 {
-        font-size: 2.5rem;
-    }
-    
     .evento {
         padding: 1.5rem;
         margin-bottom: 3rem;
@@ -128,31 +95,14 @@
     .evento h2 {
         font-size: 1.8rem;
     }
-    
-    .fotos-evento {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 0.8rem;
-    }
-    
-    .fotos-evento .bloco-foto img {
-        height: 150px;
-    }
 }
 
 @media (max-width: 480px) {
-    #galeria-eventos h1 {
-        font-size: 2rem;
-    }
-    
     .evento {
         padding: 1rem;
     }
     
     .evento h2 {
         font-size: 1.5rem;
-    }
-    
-    .fotos-evento {
-        grid-template-columns: 1fr;
     }
 }
