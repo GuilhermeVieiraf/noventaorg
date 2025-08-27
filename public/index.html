@@ -8,173 +8,207 @@
     <link rel="icon" type="image/png" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
     <link rel="apple-touch-icon" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="assets/js/components/header.js"></script>
+    <script src="assets/js/components/header.js" defer></script>
 </head>
 
-<body class = "pagina-home">
+<body class="pagina-home">
     <div id="preloader">
         <div class="preloader-container">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/9! png.png"
-                alt="Logo nove" class="preloader-logo">
+            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/9! png.png" alt="Logo nove"
+                class="preloader-logo">
         </div>
         <div class="spinner"></div>
     </div>
 
-    <section id="hero" class="container">
-        <div class="video-noventa">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Q39PREkfY?si=PHT8upSpXw8ktn0C"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+    <div id="header-placeholder"></div>
 
-    <section id="noticia-destaque"> 
-        <div class="container">
-            <h2 class="noticia-titulo-sessao">ÚLTIMAS NOTÍCIAS</h2>
-            <div class="noticia-container-interno">
-                <div class="noticia-imagem">
-                    <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotonoticia-home.webp"
-                        alt="Descrição da imagem da notícia">
-                </div>
-                <div class="noticia-conteudo">
-                    <p class="noticia-resumo">
-                        Já é realidade e está mais perto do que nunca... A primeiríssima edição de revistas da Noventa
-                        "NOVENTA! MAGAZINE" terá lançamento ainda neste mês de agosto, em 2025. Saiba mais sobre essa e
-                        mais
-                        notícias de última hora da organização.
-                    </p>
-                    <a href="noticias.html" class="noticia-cta">Saiba mais</a>
+    <main>
+        <section id="hero">
+            <div class="video-noventa">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Q39PREkfY?si=PHT8upSpXw8ktn0C"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="noticia-destaque">
+            <div class="container">
+                <h2 class="noticia-titulo-sessao">ÚLTIMAS NOTÍCIAS</h2>
+                <div class="swiper meu-carrossel">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide noticia-bloco">
+                            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/noticiacarroselmagazine.webp"
+                                alt="Imagem notícia da revista">
+                            <div class="noticia-conteudo">
+                                <h2 class="noticia-titulo">NOVENTA! MAGAZINE</h2>
+                                <p class="noticia-resumo">
+                                    É OFICIAL! Volume inicial de NOVENTA! MAGAZINE é lançado no dia 22
+                                    de agosto de 2025.
+                                </p>
+                                <a href="noticias.html" class="noticia-cta">Ler notícia completa &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide noticia-bloco">
+                            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/noticia-noventasegundos.webp"
+                                alt="Imagem da noticia do vídeo 90 segundos">
+                            <div class="noticia-conteudo">
+                                <h2 class="noticia-titulo">90 SEGUNDOS</h2>
+                                <p class="noticia-resumo">
+                                    <a href="https://youtu.be/zalmgqXVDv0?si=g75cFg0k7PHf-kt0" target="_blank">ASSISTA
+                                        AGORA</a> um dos melhores vídeos de skate com 1 minuto e meio que irá ver...
+                                </p>
+                                <a href="noticias.html" class="noticia-cta">Ler notícia completa &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide noticia-bloco">
+                            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fotoAdesivosHorizontal.jpg"
+                                alt="Terceira Imagem">
+                            <div class="noticia-conteudo">
+                                <h2 class="noticia-titulo">ADESIVOS NOVENTA</h2>
+                                <p class="noticia-resumo">
+                                    Conheça e adquira já seu ADESIVO NOVENTA! Nossos adesivos são uma forma de mostrar a
+                                    presença da marca...
+                                </p>
+                                <a href="noticias.html" class="noticia-cta">Ler notícia completa &rarr;</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="fotos-home" class="container">
 
-    <section id="fotos-home" class="container">
-
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home1.webp"
-                alt=" Foto Gabriel, manobra wallride">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home2.webp"
-                alt="Foto Silmar, Ramon e Thales">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home3.webp"
-                alt="foto monumental Thales">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home4.webp"
-                alt="Foto Thales, manobra no-comply">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home5.webp"
-                alt="Adesivo noventao na camisa">
-        </div>
-        <div class="bloco-foto">
-            <video autoplay loop muted playsinline aria-label="Vídeo do Thales raspando o cabelo"
-                style="max-width: 100%; height: auto;">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home6.webm"
-                    type="video/webm">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home6.mp4"
-                    type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-            </video>
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home7.webp"
-                alt="Foto Ramon, Thales, Miguel e Brivi">
-        </div>
-        <div class="bloco-foto">
-            <video autoplay loop muted playsinline
-                aria-label="Vídeo Manu descendo o morro de skate com o senhor cadeirante"
-                style="max-width: 100%; height: auto;">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home8.webm"
-                    type="video/webm">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home8.mp4"
-                    type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-            </video>
-        </div>
-        <div class="bloco-foto">
-            <video autoplay loop muted playsinline aria-label="Vídeo adesivo nove"
-                style="max-width: 100%; height: auto;">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home9.webm"
-                    type="video/webm">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home9.mp4"
-                    type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-            </video>
-        </div>
-        <div class="bloco-foto">
-            <video autoplay loop muted playsinline aria-label="Vídeo crianças descendo de skate"
-                style="max-width: 100%; height: auto;">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home10.webm"
-                    type="video/webm">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home10.mp4"
-                    type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-            </video>
-        </div>
-        <div class="bloco-foto">
-            <video autoplay loop muted playsinline aria-label="Vídeo do Manu mandando a manobra rock"
-                style="max-width: 100%; height: auto;">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home11.webm"
-                    type="video/webm">
-                <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home11.mp4"
-                    type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-            </video>
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home12.webp"
-                alt="Foto Miguel de costas">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home13.webp"
-                alt="Foto adesivo nove na grama">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home15.webp"
-                alt="Foto graffiti noventa e dominio">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home17.webp" alt="Foto toinho">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home18.webp"
-                alt="Foto Silmar, flip no gap descendo a rampa">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home19.webp" alt="Foto do Brivi">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home20.webp"
-                alt="Foto do Marquinhos graffiti">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home21.webp"
-                alt="Foto do Lukinha e filho dele">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home22.webp"
-                alt="Foto do Viana, mandando flip no gap">
-        </div>
-        <div class="bloco-foto">
-            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home23.webp"
-                alt="Foto dos adesivos nove">
-        </div>
-    </section>
-
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home1.webp"
+                    alt=" Foto Gabriel, manobra wallride" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home2.webp"
+                    alt="Foto Silmar, Ramon e Thales" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home3.webp"
+                    alt="foto monumental Thales" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home4.webp"
+                    alt="Foto Thales, manobra no-comply" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home5.webp"
+                    alt="Adesivo noventao na camisa" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <video autoplay loop muted playsinline aria-label="Vídeo do Thales raspando o cabelo">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home6.webm"
+                        type="video/webm">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home6.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home7.webp"
+                    alt="Foto Ramon, Thales, Miguel e Brivi" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <video autoplay loop muted playsinline
+                    aria-label="Vídeo Manu descendo o morro de skate com o senhor cadeirante">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home8.webm"
+                        type="video/webm">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home8.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="bloco-foto">
+                <video autoplay loop muted playsinline aria-label="Vídeo adesivo nove">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home9.webm"
+                        type="video/webm">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home9.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="bloco-foto">
+                <video autoplay loop muted playsinline aria-label="Vídeo crianças descendo de skate">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home10.webm"
+                        type="video/webm">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home10.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="bloco-foto">
+                <video autoplay loop muted playsinline aria-label="Vídeo do Manu mandando a manobra rock">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home11.webm"
+                        type="video/webm">
+                    <source src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home11.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home12.webp"
+                    alt="Foto Miguel de costas" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home13.webp"
+                    alt="Foto adesivo nove na grama" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home15.webp"
+                    alt="Foto graffiti noventa e dominio" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home17.webp"
+                    alt="Foto toinho" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home18.webp"
+                    alt="Foto Silmar, flip no gap descendo a rampa" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home19.webp"
+                    alt="Foto do Brivi" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home20.webp"
+                    alt="Foto do Marquinhos graffiti" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home21.webp"
+                    alt="Foto do Lukinha e filho dele" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home22.webp"
+                    alt="Foto do Viana, mandando flip no gap" loading="lazy">
+            </div>
+            <div class="bloco-foto">
+                <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/home/home23.webp"
+                    alt="Foto dos adesivos nove" loading="lazy">
+            </div>
+        </section>
+    </main>
 
     <div id="footer-placeholder"></div>
 
-    <script src="assets/js/components/footer.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/components/preloader.js"></script>
+    <script src="assets/js/components/footer.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/components/preloader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/components/carrosel.js" defer></script>
 </body>
 
 </html>

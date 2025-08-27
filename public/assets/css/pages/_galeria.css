@@ -83,7 +83,7 @@
 }
 
 .evento[href="estreia-noventa-magazine.html"].evento-destaque {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/revista-noticia.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/gif-evento-magazine.gif');
 }
 
 @media (max-width: 768px) {
