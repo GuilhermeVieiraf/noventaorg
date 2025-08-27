@@ -1,16 +1,17 @@
-.premiere-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 0;
+body.pagina-evento {
+    background-color: var(--vermelho-noventa);
+    color: #ffffff;
 }
 
-.fotos-premiere {
-    margin-bottom: 3rem;
+.evento-content {
+    max-width: 1000px;      
+    margin: 0 auto;
+    padding: 2rem 0;        
 }
 
 .fotos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -21,6 +22,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    border-radius: 0;  
 }
 
 .fotos-grid .bloco-foto:hover {
@@ -34,26 +36,14 @@
     display: block;
     object-fit: cover;
     transition: transform 0.3s ease;
+    image-rendering: auto;  
 }
 
 .fotos-grid .bloco-foto:hover img {
     transform: scale(1.05);
 }
 
-
 @media (max-width: 1024px) {
-    .fotos-grid {
-        gap: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-    main.container>h1,
-    section.container>h1 {
-        font-size: 2.5rem;
-    }
-
     .fotos-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -61,10 +51,8 @@
 }
 
 @media (max-width: 480px) {
-
-    main.container>h1,
-    section.container>h1 {
-        font-size: 2rem;
+    .evento-content {
+        padding: 1.5rem 0;
     }
 
     .fotos-grid {
