@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estreia Noventa Magazine - noventaorg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
+    <link rel="apple-touch-icon" href="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/fivecon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/components/header.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="preloader-container">
+            <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/9! png.png" alt="Logo nove"
+                class="preloader-logo">
+        </div>
+        <div class="spinner"></div>
+    </div>
+
+    <section class="container">
+        <div class="estreia-magazine-content">
+            <div class="fotos-estreia">
+                <div class="fotos-grid">
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine1.webp"
+                            alt="Foto Estreia 1" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine2.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine3.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine4.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine5.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine6.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine7.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine8.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine9.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                    <div class="bloco-foto" onclick="expandirFoto(this)">
+                        <img src="https://pub-71edebaaa1c948278b1721aa0eebf837.r2.dev/imagens/gallery/noventa-magazine/magazine10.webp"
+                            alt="Foto Estreia 3" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-foto" class="modal-foto">
+        <div class="modal-content">
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+            <button class="seta-navegacao seta-esquerda" onclick="fotoAnterior()">&#10094;</button>
+            <button class="seta-navegacao seta-direita" onclick="proximaFoto()">&#10095;</button>
+            <img id="foto-expandida" src="" alt="Foto expandida">
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/components/footer.js"></script>
+    <script src="assets/js/components/pages-eventos.js"></script>
+    <script src="assets/js/components/preloader.js"></script>
+</body>
+
+</html>
