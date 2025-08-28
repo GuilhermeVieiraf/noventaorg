@@ -54,7 +54,7 @@
 #noticia-destaque .noticia-conteudo {
     position: absolute;
     inset: 0;
-    padding: 1.2rem 1.5rem; 
+    padding: 1rem 1.2rem; 
     background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.85) 100%); 
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
     font-size: 1.5rem; 
     font-family: 'TTInterphasesProDemiBold', sans-serif;
     color: #ffffff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
@@ -109,4 +109,20 @@
 
 #noticia-destaque .swiper-pagination-bullet-active {
     background: var(--vermelho-noventa);
+}
+
+@media (max-width: 768px) {
+    
+    #noticia-destaque .noticia-titulo {
+        font-size: 1.2rem; 
+    }
+
+    #noticia-destaque .noticia-resumo {
+        font-size: 0.8rem; 
+    }
+
+    #noticia-destaque .noticia-cta {
+        font-size: 0.8rem; 
+        margin-bottom: 0.5rem;
+    }
 }
