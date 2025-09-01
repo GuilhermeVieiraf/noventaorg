@@ -103,12 +103,12 @@
 
 #noticia-destaque .swiper-button-next,
 #noticia-destaque .swiper-button-prev {
-    color: var(--vermelho-noventa);
+    color: #ffffff;
     --swiper-navigation-size: 28px; 
 }
 
 #noticia-destaque .swiper-pagination-bullet-active {
-    background: var(--vermelho-noventa);
+    background: #ffffff;
 }
 
 @media (max-width: 768px) {
