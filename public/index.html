@@ -26,14 +26,36 @@
 
     <main>
         <section id="hero">
-            <div class="video-noventa">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/my8JM-iKizY?si=E7NhrNOAuMi7NsX5" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+            <div class="galeria-videos">
+                <div class="video-principal">
+                    <div class="video-wrapper">
+                        <iframe id="iframe-principal" src="https://www.youtube.com/embed/my8JM-iKizY?si=E7NhrNOAuMi7NsX5" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+            <div class="playlist-lateral">
+                
+                <div class="item-playlist ativo" data-video="zYb8jprCFF8">
+                    <img src="https://img.youtube.com/vi/zYb8jprCFF8/hqdefault.jpg" alt="Capa Vídeo 1">
+                </div>
+
+                <div class="item-playlist" data-video="9DgSrjZnSVY">
+                    <img src="https://img.youtube.com/vi/9DgSrjZnSVY/hqdefault.jpg" alt="Capa Vídeo 3">
+                </div>
+
+                <div class="item-playlist" data-video="mVpbXMnNybs">
+                    <img src="https://img.youtube.com/vi/mVpbXMnNybs/hqdefault.jpg" alt="Capa Vídeo 8">
+                </div>
+
+                <div class="item-playlist" data-video="zalmgqXVDv0">
+                    <img src="https://img.youtube.com/vi/zalmgqXVDv0/hqdefault.jpg" alt="Capa Vídeo 6">
+                </div>
+
+            </div>
             </div>
         </section>
-
         <section id="noticia-destaque">
             <div class="container">
                 <h2 class="noticia-titulo-sessao">ÚLTIMAS NOTÍCIAS</h2>
@@ -240,6 +262,8 @@
     <script src="assets/js/components/preloader.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/components/carrosel.js" defer></script>
+    
+    <script src="assets/js/components/playlist.js" defer></script>
 </body>
 
 </html>
