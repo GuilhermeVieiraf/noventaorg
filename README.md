@@ -10,4 +10,4 @@ Site oficial da NOVENTA!
 
 ---
 
-&copy; 2025 NoventaOrg. Todos os direitos reservados.
+&copy; 2026 NoventaOrg. Todos os direitos reservados.
