@@ -2,7 +2,6 @@ body.pagina-home {
     background-color: var(--vermelho-noventa);
 }
 
-/* ==================== HERO E GALERIA DE VÍDEOS ==================== */
 #hero {
     width: 100%;
     margin-top: 80px;
@@ -13,7 +12,7 @@ body.pagina-home {
     display: flex;
     gap: 15px;
     width: 95%; 
-    max-width: 1150px; /* AGORA SIM ELE VAI OBEDECER ISSO! */
+    max-width: 1150px; 
     height: 550px; 
     margin: 0 auto; 
 }
@@ -48,8 +47,8 @@ body.pagina-home {
     padding-right: 8px;
 }
 
-/* Estilo de cada miniatura */
 .item-playlist {
+    position: relative;
     cursor: pointer;
     transition: transform 0.2s, filter 0.2s;
     filter: brightness(0.6); 
@@ -67,9 +66,23 @@ body.pagina-home {
 
 .item-playlist img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
     display: block;
     object-fit: cover;
+}
+
+.titulo-video {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    color: #ffffff; 
+    font-weight: bold; 
+    font-size: 11px;
+    font-family: sans-serif; 
+    pointer-events: none; 
+    z-index: 2;
+    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 .playlist-lateral::-webkit-scrollbar {
@@ -83,7 +96,6 @@ body.pagina-home {
     border-radius: 4px;
 }
 
-/* ==================== RESPONSIVIDADE GALERIA ==================== */
 @media (max-width: 1024px) {
     .galeria-videos {
         height: 400px;
