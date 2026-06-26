@@ -50,17 +50,14 @@ body.pagina-home {
 .item-playlist {
     position: relative;
     cursor: pointer;
-    transition: transform 0.2s, filter 0.2s;
-    filter: brightness(0.6); 
+    transition: transform 0.2s;
 }
 
 .item-playlist:hover {
     transform: scale(0.98);
-    filter: brightness(1);
 }
 
 .item-playlist.ativo {
-    filter: brightness(1);
     border: 3px solid var(--cor-destaque, #fff); 
 }
 
@@ -92,7 +89,7 @@ body.pagina-home {
     background: rgba(0, 0, 0, 0.1);
 }
 .playlist-lateral::-webkit-scrollbar-thumb {
-    background: #555; 
+    background: #ffffff; 
     border-radius: 4px;
 }
 
